@@ -153,3 +153,28 @@ PRIMARY KEY(Fighter_ID));
 
 /*====================================================================================*/
 
+/* Creates a new table called Fights_On, with all of its attributes. */
+CREATE TABLE Fights_On
+( Fighter_ID Integer NOT NULL,
+Color_Variant Integer NOT NULL,
+Stage_ID Integer NOT NULL,
+PRIMARY KEY(Fighter_ID, Color_Variant),
+FOREIGN KEY(Fighter_ID, Color_Variant) REFERENCES Fighter(Fighter_ID, Color_Variant),
+FOREIGN KEY(Stage_ID) REFERENCES Stage(Stage_ID));
+     
+/* Creates a new table called Utilizes, with all of its attributes. */
+CREATE TABLE Utilizes
+( Fighter_ID Integer NOT NULL,
+Color_Variant Integer NOT NULL,
+Item_ID Integer NOT NULL,
+PRIMARY KEY(Fighter_ID, Color_Variant),
+FOREIGN KEY(Fighter_ID, Color_Variant) REFERENCES Fighter(Fighter_ID, Color_Variant),
+FOREIGN KEY(Item_ID) REFERENCES Item(Item_ID));
+
+/* Creates a new table called Special_Moveset, with all of its attributes. */
+CREATE TABLE Special_Moveset
+( Special_Move Integer NOT NULL,
+Fighter_ID Integer NOT NULL,
+Color_Variant Integer NOT NULL,
+PRIMARY KEY(Fighter_ID),
+FOREIGN KEY(Fighter_ID, Color_Variant) REFERENCES Fighter(Fighter_ID, Color_Variant));
