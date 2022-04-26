@@ -104,15 +104,15 @@ INSERT INTO Base_Music(Music_ID,Smash_Title_of_Origin)
 INSERT INTO DLC_Music(Music_ID,Challenger_Pack_Number,Date_Added)
 	VALUES
 	(200, 1, '2019-04-17'), /* Last Surprise */
-	(201, 1, '2019-07-30'), /* Adventure */
-	(202, 1, '2019-09-04'), /* Main Theme */
-	(203, 1, '2019-11-06'), /* Song of the Fight */
-	(204, 1, '2020-01-28'), /* Fire Emblem Theme */
-	(205, 1, '2020-06-29'), /* ARMS Grand Prix */
-	(206, 1, '2020-10-13'), /* Holland */
-	(207, 1, '2020-12-22'), /* Let the Battles Begin! */
-	(208, 1, '2021-03-04'), /* Argentum */
-	(209, 1, '2021-06-29'); /* Kazuya Mishima */
+	(201, 2, '2019-07-30'), /* Adventure */
+	(202, 3, '2019-09-04'), /* Main Theme */
+	(203, 4, '2019-11-06'), /* Song of the Fight */
+	(204, 5, '2020-01-28'), /* Fire Emblem Theme */
+	(205, 6, '2020-06-29'), /* ARMS Grand Prix */
+	(206, 7, '2020-10-13'), /* Holland */
+	(207, 8, '2020-12-22'), /* Let the Battles Begin! */
+	(208, 9, '2021-03-04'), /* Argentum */
+	(209, 10, '2021-06-29'); /* Kazuya Mishima */
 
 INSERT INTO Music_Mix (Music_Name, Remix_Status)
     VALUES
