@@ -296,3 +296,15 @@ INSERT INTO Fights_On(Fighter_ID, Color_Variant, Stage_ID)
         (83, 4, 5107), /*Terry Bogard plays on Saffron City*/
         (89, 5, 5209), /*Kazuya Cloud Sea of Alrest*/
         (77, 3, 5203); /*Pac Man plays on King of Fighters Stadium*/
+
+INSERT INTO Utilizes(Fighter_ID, Color_Variant, Item_ID)
+    VALUES(82, 3, 68), /*Banjo & Kazooie uses Beehive*/
+        (74, 5, 61), /*Link uses Back Shield*/
+        (84, 5, 63), /*Byleth uses Banana Peel*/
+        (72, 3, 67), /*Peach uses Beastball*/
+        (73, 4, 66), /*Bowser uses Beam Sword */
+        (81, 2, 60), /*Hero uses Assist Trophy*/
+        (87, 3, 62), /*Sephiroth uses Banana Gun*/
+        (83, 4, 64), /*Terry Bogard uses Barrel*/
+        (89, 5, 65), /*Kazuya uses Barrel Cannon*/
+        (77, 3, 69); /*Pac Man uses Beetle */
