@@ -12,6 +12,7 @@ CREATE TABLE Spirit_Power (
 );
 
 /* Creates a new table called Spirit, with all of its attributes. */
+<<<<<<< HEAD
 CREATE TABLE Spirit (
     Spirit_ID INTEGER NOT NULL,
     Spirit_Name VARCHAR(100) NOT NULL,
@@ -22,8 +23,18 @@ CREATE TABLE Spirit (
     FOREIGN KEY (Overall_Power)
         REFERENCES Spirit_Power (Overall_Power)
 );
+=======
+CREATE TABLE Spirit
+( Spirit_ID Integer NOT NULL AUTO_INCREMENT,
+Spirit_Name varchar(100) NOT NULL,
+Spirit_Type varchar(25) NOT NULL,
+Game_Series varchar(100) NOT NULL,
+Overall_Power Integer NOT NULL,
+PRIMARY KEY(Spirit_ID),
+FOREIGN KEY(Overall_Power) REFERENCES Spirit_Power(Overall_Power)); 
+>>>>>>> 78c20a046d997a43da3098fa630200b3c8dc144d
 
-/*====================================================================================*/
+/*===============================================================================================================================*/
 
 CREATE TABLE Item_Background (
     Item_Name VARCHAR(100) NOT NULL,
@@ -33,6 +44,7 @@ CREATE TABLE Item_Background (
 );
 
 /* Creates a new table called Item, with all of its attributes. */
+<<<<<<< HEAD
 CREATE TABLE Item (
     Item_ID INTEGER NOT NULL,
     Player_Selected_Status BOOLEAN NOT NULL,
@@ -41,8 +53,16 @@ CREATE TABLE Item (
     FOREIGN KEY (Item_Name)
         REFERENCES Item_Background (Item_Name)
 );
+=======
+CREATE TABLE Item
+( Item_ID Integer NOT NULL AUTO_INCREMENT,
+Player_Selected_Status Boolean NOT NULL,
+Item_Name varchar(100) NOT NULL,
+PRIMARY KEY(ITEM_ID),
+FOREIGN KEY(Item_Name) REFERENCES Item_Background(Item_Name));
+>>>>>>> 78c20a046d997a43da3098fa630200b3c8dc144d
 
-/*====================================================================================*/
+/*===============================================================================================================================*/
 
 CREATE TABLE Music_Mix (
     Music_Name VARCHAR(250) NOT NULL,
@@ -51,6 +71,7 @@ CREATE TABLE Music_Mix (
 );
 
 /* Creates a new table called Music, with all of its attributes. */
+<<<<<<< HEAD
 CREATE TABLE Music (
     Music_ID INTEGER NOT NULL,
     Duration FLOAT NOT NULL,
@@ -59,6 +80,14 @@ CREATE TABLE Music (
     FOREIGN KEY (Music_Name)
         REFERENCES Music_Mix (Music_Name)
 );
+=======
+CREATE TABLE Music
+( Music_ID Integer NOT NULL AUTO_INCREMENT,
+Duration Float NOT NULL,
+Music_Name varchar(250) NOT NULL,
+PRIMARY KEY(Music_ID),
+FOREIGN KEY(Music_Name) REFERENCES Music_Mix(Music_Name));
+>>>>>>> 78c20a046d997a43da3098fa630200b3c8dc144d
 
 /* Creates a new table called Base_Music, with all of its attributes. */
 CREATE TABLE Base_Music (
@@ -75,8 +104,9 @@ CREATE TABLE DLC_Music (
     PRIMARY KEY (Music_ID)
 );
 
-/*====================================================================================*/
+/*===============================================================================================================================*/
 
+<<<<<<< HEAD
 CREATE TABLE Stage (
     Stage_ID INTEGER NOT NULL,
     Stage_Name VARCHAR(250) NOT NULL,
@@ -86,6 +116,16 @@ CREATE TABLE Stage (
     FOREIGN KEY (Music_ID)
         REFERENCES Music (Music_ID)
 );
+=======
+/* Creates a new table called Stage, with all of its attributes. */
+CREATE TABLE Stage
+( Stage_ID Integer NOT NULL AUTO_INCREMENT,
+Stage_Name varchar(250) NOT NULL,
+Stage_Form Boolean NOT NULL,
+Music_ID Integer NOT NULL,
+PRIMARY KEY(Stage_ID),
+FOREIGN KEY(Music_ID) REFERENCES Music(Music_ID));
+>>>>>>> 78c20a046d997a43da3098fa630200b3c8dc144d
 
 /* Creates a new table called Base_Stage, with all of its attributes. */
 CREATE TABLE Base_Stage (
@@ -102,8 +142,9 @@ CREATE TABLE DLC_Stage (
     PRIMARY KEY (Stage_ID)
 );
 
-/*====================================================================================*/
+/*===============================================================================================================================*/
 
+<<<<<<< HEAD
 CREATE TABLE Final_Smash (
     Final_Smash_ID INTEGER NOT NULL,
     Smash_Name VARCHAR(10) NOT NULL,
@@ -114,6 +155,18 @@ CREATE TABLE Final_Smash (
     Color_Variant INTEGER NOT NULL,
     PRIMARY KEY (Final_Smash_ID)
 );
+=======
+/* Creates a new table called Final_Smash, with all of its attributes. */
+CREATE TABLE Final_Smash
+( Final_Smash_ID Integer NOT NULL AUTO_INCREMENT,
+Smash_Name varchar(10) NOT NULL,
+Smash_Title_of_Origin varchar(100) NOT NULL,
+Attack_Type varchar(20) NOT NULL,
+Duration Float NOT NULL,
+Fighter_ID Integer NOT NULL,
+Color_Variant Integer NOT NULL,
+PRIMARY KEY(Final_Smash_ID));
+>>>>>>> 78c20a046d997a43da3098fa630200b3c8dc144d
 
 /* Creates a new table called Game_Mode, with all of its attributes. */
 CREATE TABLE Game_Mode (
@@ -122,7 +175,7 @@ CREATE TABLE Game_Mode (
     PRIMARY KEY (Mode_Name)
 );
 
-/*====================================================================================*/
+/*===============================================================================================================================*/
 
 CREATE TABLE Fighter_Background (
     Fighter_Name VARCHAR(250) NOT NULL,
@@ -137,6 +190,7 @@ CREATE TABLE Fighter_Background (
 );
 
 /* Creates a new table called Fighter, with all of its attributes. */
+<<<<<<< HEAD
 CREATE TABLE Fighter (
     Fighter_ID INTEGER NOT NULL,
     Color_Variant INTEGER NOT NULL,
@@ -151,6 +205,18 @@ CREATE TABLE Fighter (
     FOREIGN KEY (Fighter_Name)
         REFERENCES Fighter_Background (Fighter_Name)
 );
+=======
+CREATE TABLE Fighter
+( Fighter_ID Integer NOT NULL AUTO_INCREMENT,
+Color_Variant Integer NOT NULL,
+Spirit_ID Integer NOT NULL,
+Mode_Name varchar(100) NOT NULL,
+Fighter_Name varchar(250) NOT NULL,
+PRIMARY KEY(Fighter_ID, Color_Variant),
+FOREIGN KEY(Spirit_ID) REFERENCES Spirit(Spirit_ID),
+FOREIGN KEY(Mode_Name) REFERENCES Game_Mode(Mode_Name),
+FOREIGN KEY(Fighter_Name) REFERENCES Fighter_Background(Fighter_Name));
+>>>>>>> 78c20a046d997a43da3098fa630200b3c8dc144d
 
 /* Adds a new foreign key into Final_Smash. */
 ALTER TABLE Final_Smash
@@ -174,7 +240,7 @@ CREATE TABLE DLC_Fighter (
     PRIMARY KEY (Fighter_ID)
 );
 
-/*====================================================================================*/
+/*===============================================================================================================================*/
 
 CREATE TABLE Fights_On (
     Fighter_ID INTEGER NOT NULL,
