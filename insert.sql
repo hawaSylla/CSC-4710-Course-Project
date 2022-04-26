@@ -272,3 +272,17 @@ INSERT INTO Utilizes(Fighter_ID,Color_Variant,Item_ID)
 	(013, 1,68), /* Banjo & Kazooie, beehive*/
 	(015, 1,69), /* Byleth, beetle*/
 	(018, 1,62); /* Sephiroth, banana gun */
+
+	/* Code block for series of insertions into Base_Fighter. */
+INSERT INTO Special_Moveset(Fighter_ID,Color_Variant,Special_Move)
+    VALUES
+    (70, 1, "Fireball"), /* Mario */
+    (71, 2, "Fireball"), /* Luigi */
+    (72, 3, "Toad"), /* Peach */
+    (73, 4, "Fire Breath"), /*Bowser */
+    (74, 5, "Hero's Bow"), /*Toon Link */
+    (75, 1, "Blaster"), /*Wolf */
+    (76, 2, "Luma Shot"), /*Rosalina and Luma */
+    (77, 3, "Bonus Fruit"), /*Pac Man */
+    (78, 4, "Blunderbuss"), /*King K. Rool */
+    (79, 5, "Chargeshot"); /*Dark Samus */
