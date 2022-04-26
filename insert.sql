@@ -285,4 +285,14 @@ INSERT INTO Special_Moveset(Fighter_ID,Color_Variant,Special_Move)
     (76, 2, "Luma Shot"), /*Rosalina and Luma */
     (77, 3, "Bonus Fruit"), /*Pac Man */
     (78, 4, "Blunderbuss"), /*King K. Rool */
-    (79, 5, "Chargeshot"); /*Dark Samus */
+    (79, 5, "Chargeshot"), /*Dark Samus */
+	(80, 1, "Gun/Gun Special"), /* Joker */
+    (81, 2, "Frizz"), /* Hero */
+    (82, 3, "Egg Firing / Breegull Blaster"), /* Banjo & Kazooie */
+    (83, 4, "Power Wave"), /* Terry Bogard */
+    (84, 5, "Failnaught"), /* Byleth */
+    (85, 1, "Punch"), /* Min Min */
+    (86, 2, "Mine / Craft / Create Block"), /* Steve & Alex */
+    (87, 3, "Flare / Megaflare / Gigaflare"), /* Sephiroth */
+    (88, 4, "Flame Nova"), /* Pyra & Mythra */
+    (89, 5, "Devil Blaster"); /* Kazuya */
