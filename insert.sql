@@ -140,7 +140,7 @@ INSERT INTO DLC_Music(Music_ID,Challenger_Pack_Number,Date_Added)
 
 
 /* Code block for series of insertions into DLC_Stage. */
-INSERT INTO DLC_Stage (Stage_ID,Smash_Title_of_Origin, Date Added)
+INSERT INTO DLC_Stage (Stage_ID,Smash_Title_of_Origin, Date_Added)
     VALUES(0000,'Super Smash Bros.', 04172019), /*Mementos*/
         (0001,'Super Smash Bros.', 07302019), /*Yggdrasil's Altar*/
         (0002,'Super Smash Bros.', 09042019), /*Spiral Mountain*/
