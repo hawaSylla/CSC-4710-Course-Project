@@ -10,6 +10,10 @@ INSERT INTO Base_Fighter(Fighter_ID,Color_Variant,Smash_Title_of_Origin)
                   (008,1,"Super Smash Bros."),/*Samus */
                   (009,1,"Super Smash Bros."),/*Kirby */
                   (010,1,"Super Smash Bros.");/*Fox */
+-- #DLC Fighter
+INSERT INTO DLC_Fighter(Fighter_ID,Color_Variant,Challenger_Pack_Number,Date_Added)
+			VALUES(0001,01,01,01012018);
+-- #Music
 INSERT INTO Base_Music(Music_ID,Smash_Title_of_Origin)
 			VALUES(0000,"Super Smash Bros. Ultimate"), /*Lifelight (JP) */
                   (0001,"Super Smash Bros. Ultimate"),/*Lifelight */
@@ -22,14 +26,38 @@ INSERT INTO Base_Music(Music_ID,Smash_Title_of_Origin)
                   
                   (0058,"Super Smash Bros. Brawl"),/*Final Destination - Super Smash Bros. Brawl*/
                   (0057,"Super Smash Bros. Ultimate");/*Giga Bowser*/
-INSERT INTO Base_Stage(Stage_ID,Smash_Title_of_Origin)
-			VALUES(0001,"Super Smash Bros.");
-            
-INSERT INTO DLC_Fighter(Fighter_ID,Color_Variant,Challenger_Pack_Number,Date_Added)
-			VALUES(0001,01,01,01012018);
+-- #DLC Music
 INSERT INTO DLC_Music(Music_ID,Challenger_Pack_Number,Date_Added)
 			VALUES(0001,01,01,01012018);
+-- #Items
+INSERT INTO Item(Item_ID,Player_Selected_Status,Item_Name)
+			VALUES(0000,false,"Assist Trophy"),
+                  (0001,false,"Back Shield"),
+				  (0002,false,"Banana Gun"),
+				  (0004,false,"Banana Peel"),
+                  (0005,false,"Barrel"),
+                  (0006,false,"Barrel Cannon"),
+				  (0007,false,"Beam Sword"),
+                  (0008,false,"Beastball"),
+                  (0009,false,"Beehive"),
+                  (0010,false,"Beetle");
+-- #ItemBackground
+INSERT INTO Item_Background(Item_Name,Game_Series,Item_Type)
+			VALUES("Assist Trophy","Super Smash Bros.","Summoning"),
+                  ("Back Shield","Kid Icarus","Status"),
+				  ("Banana Gun","Super Smash Bros.","Shooting"),
+				  ("Banana Peel","Super Mario","Throwing"),
+                  ("Barrel","Donkey Kong","Container"),
+                  ("Barrel Cannon","Super Smash Bros.","Throwing"),
+				  ("Beam Sword","Super Smash Bros.","Battering"),
+                  ("Beastball","Super Smash Bros.","Throwing"),
+                  ("Beehive","Animal Crossing","Throwing"),
+                  ("Beetle","The Legend of Zelda","Throwing");
+-- # Stages
+INSERT INTO Base_Stage(Stage_ID,Smash_Title_of_Origin)
+			VALUES(0001,"Super Smash Bros.");
 
+-- #GameMode
 INSERT INTO Game_Mode (Mode_Name, Tagline)
 	VALUES 
 		('Classic', 'Each fighter has a route. Try to make it through!'),
