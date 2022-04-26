@@ -203,19 +203,7 @@ INSERT INTO Fighter_Background (Fighter_Name, Gender, Game_Series, Weight_Class,
         ('Samus', 'Female', 'Super Smash Bros.', 'Heavy', 'B'), /*Samus */
         ('Kirby', 'Male', 'Super Smash Bros.', 'Super Light', 'D'), /*Kirby */
         ('Fox', 'Male', 'Super Smash Bros.', 'Super Light', 'A'); /*Fox */
-        
-/* Code block for series of insertions into Base_Music. */
-INSERT INTO Base_Music(Music_ID,Smash_Title_of_Origin)
-	VALUES(300,"Super Smash Bros. Ultimate"), /*Lifelight (JP) */
-        (301,"Super Smash Bros. Ultimate"),/*Lifelight */
-		(302,"Super Smash Bros. Brawl"),/*Unfounded Revenge*/
-		(303,"Super Smash Bros. Melee"),/*Green Hill Zone */
-        (304,"Super Smash Bros."),/*Seaskape*/
-        (305,"Super Smash Bros. Melee"),/*Original Medley*/
-		(306,"Super Smash Bros. Melee"),/*Menu 1 */
-        (307,"Super Smash Bros. Ultimate"),/*The Light Realm: March */         
-        (308,"Super Smash Bros. Brawl"),/*Final Destination - Super Smash Bros. Brawl*/
-        (309,"Super Smash Bros. Brawl");/*Battle! (Battle Subway Trainer)*/
+       
 
 /* Code block for series of insertions into Base_Stage. */
 INSERT INTO Base_Stage(Stage_ID,Smash_Title_of_Origin)
