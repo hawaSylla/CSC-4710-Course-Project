@@ -248,25 +248,25 @@ INSERT INTO Stage(Stage_ID,Stage_Name,Stage_Form,Music_ID)
 	(5310,'Mishima Dojo','Default',0039); /*Mishima Dojo*/
 	
 INSERT INTO Fights_On(Fighter_ID, Color_Variant, Stage_ID)
-    VALUES(013, 1, 5210),
-        (006, 1, 5301),
-        (015, 1, 5309),
-        (002, 1, 5100),
-        (003, 1, 5105),
-        (011, 1, 5305),
-        (018, 1, 5206),
-        (014, 1, 5107),
-        (020, 1, 5209),
-        (007, 1, 5310);
+    VALUES(013, 1, 5210), /*Banjo & Kazooie plays on Mishima Dojo*/
+        (006, 1, 5101), /*Link plays on Final Destination*/
+        (015, 1, 5109), /*Byleth plays on Mushroom Kingdom*/
+        (002, 1, 5100), /*Peach plays on Battlefield*/
+        (003, 1, 5105), /*Bowser plays on Super Happy Tree*/
+        (011, 1, 5205), /*Hero plays on Spring Stadium*/
+        (018, 1, 5206), /*Sephiroth plays on Minecraft World*/
+        (014, 1, 5107), /*Terry Bogard plays on Saffron City*/
+        (020, 1, 5209), /*Kazuya Cloud Sea of Alrest*/
+        (007, 1, 5203); /*Sheik plays on King of Fighters Stadium*/
 
 INSERT INTO (Fighter_ID, Color_Variant, Item_ID)
-    VALUES(013, 1, 68),
-        (006, 1, 61),
-        (015, 1, 63),
-        (002, 1, 67),
-        (003, 1, 66),
-        (011, 1, 60),
-        (018, 1, 62),
-        (014, 1, 64),
-        (020, 1, 65),
-        (007, 1, 69);
+    VALUES(013, 1, 68), /*Banjo & Kazooie uses Beehive*/
+        (006, 1, 61), /*Link uses Back Shield*/
+        (015, 1, 63), /*Byleth uses Banana Peel*/
+        (002, 1, 67), /*Peach uses Beastball*/
+        (003, 1, 66), /*Bowser uses Beam Sword */
+        (011, 1, 60), /*Hero uses Assist Trophy*/
+        (018, 1, 62), /*Sephiroth uses Banana Gun*/
+        (014, 1, 64), /*Terry Bogard uses Barrel*/
+        (020, 1, 65), /*Kazuya uses Barrel Cannon*/
+        (007, 1, 69); /*Sheik uses Beetle */
