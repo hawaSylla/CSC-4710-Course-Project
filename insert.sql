@@ -69,7 +69,17 @@ INSERT INTO Item_Background(Item_Name,Game_Series,Item_Type)
                   ("Beetle","The Legend of Zelda","Throwing");
 -- # Stages
 INSERT INTO Base_Stage(Stage_ID,Smash_Title_of_Origin)
-			VALUES(0001,"Super Smash Bros.");
+			VALUES
+                (0000,'Super Smash Bros.'), /*Battlefield*/
+                (0001,'Super Smash Bros.'), /*Final Destination*/
+                (0002,'Super Smash Bros.'), /*Peach's Castle*/
+                (0003,'Super Smash Bros.'), /*Kongo Jungle*/
+                (0004,'Super Smash Bros.'), /*Hyrule Castle*/
+                (0005,'Super Smash Bros.'), /*Super Happy Tree*/
+                (0006,'Super Smash Bros.'), /*Dream Land*/
+                (0007,'Super Smash Bros.'), /*Saffron City*/
+                (0009,'Super Smash Bros.'), /*Mushroom Kingdom*/
+                (0010,'Super Smash Bros.'); /*Rainbow Cruise*/
 
 -- #GameMode
 INSERT INTO Game_Mode (Mode_Name, Tagline)
