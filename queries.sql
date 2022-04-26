@@ -15,3 +15,12 @@ FROM Item as I, Item_Background as IB
 WHERE I.item_name = IB.item_name
 	AND I.player_selected_status = False
 	AND IB.item_type = 'Throwing';
+	
+SELECT *
+FROM Music as M
+WHERE m.duration < 200;
+
+SELECT *
+FROM Spirits as S
+WHERE S.attack_Type ='Attack'
+OR S.attack_Type = 'Grab';
