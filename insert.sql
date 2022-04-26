@@ -137,16 +137,17 @@ VALUES
 
 /* Code block for series of insertions into Base_Music. */
 INSERT INTO Base_Music(Music_ID,Smash_Title_of_Origin)
-	VALUES(0000,"Super Smash Bros. Ultimate"), /*Lifelight (JP) */
-  		(0001,"Super Smash Bros. Ultimate"),/*Lifelight */
-		(0002,"Super Smash Bros. Ultimate"),/*Battlefield */
-		(0005,"Super Smash Bros. Ultimate"),/*Master Hand */
-  		(0006,"Super Smash Bros. Ultimate"),/*Crazy Hand */
-  		(0007,"Super Smash Bros. Ultimate"),/*Master Hand/Crazy Hand */
-		(0008,"Super Smash Bros. Ultimate"),/*The Light Realm: Prologue */
-  		(0009,"Super Smash Bros. Ultimate"),/*The Light Realm: March */         
-  		(0058,"Super Smash Bros. Brawl"),/*Final Destination - Super Smash Bros. Brawl*/
-  		(0057,"Super Smash Bros. Ultimate");/*Giga Bowser*/
+    VALUES
+        (0000,"Super Smash Bros. Ultimate"), /*Lifelight (JP) */
+        (0001,"Super Smash Bros. Ultimate"),/*Lifelight */
+	(0002,"Super Smash Bros. Brawl"),/*Unfounded Revenge*/
+	(0005,"Super Smash Bros. Melee"),/*Green Hill Zone */
+        (0006,"Super Smash Bros."),/*Seaskape*/
+        (0007,"Super Smash Bros. Melee"),/*Original Medley*/
+	(0008,"Super Smash Bros. Melee"),/*Menu 1 */
+        (0009,"Super Smash Bros. Ultimate"),/*The Light Realm: March */         
+        (0058,"Super Smash Bros. Brawl"),/*Final Destination - Super Smash Bros. Brawl*/
+        (0057,"Super Smash Bros. Wii");/*Battle! (Battle Subway Trainer)*/
         
 /* Code block for series of insertions into Stage. */
 INSERT INTO Stage(Stage_ID,Stage_Name,Stage_Form,Music_ID)
