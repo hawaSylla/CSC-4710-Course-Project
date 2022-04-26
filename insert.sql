@@ -259,7 +259,7 @@ INSERT INTO Fights_On(Fighter_ID, Color_Variant, Stage_ID)
         (020, 1, 5209), /*Kazuya Cloud Sea of Alrest*/
         (007, 1, 5203); /*Sheik plays on King of Fighters Stadium*/
 
-INSERT INTO (Fighter_ID, Color_Variant, Item_ID)
+INSERT INTO Utilizes(Fighter_ID, Color_Variant, Item_ID)
     VALUES(013, 1, 68), /*Banjo & Kazooie uses Beehive*/
         (006, 1, 61), /*Link uses Back Shield*/
         (015, 1, 63), /*Byleth uses Banana Peel*/
