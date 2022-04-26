@@ -1,6 +1,5 @@
 /* Code block for series of insertions into Base_Fighter. */
 INSERT INTO Base_Fighter(Fighter_ID,Color_Variant,Smash_Title_of_Origin)
-<<<<<<< HEAD
 			VALUES(000,1,"Super Smash Bros."),/*Mario */
 				  (001,1,"Super Smash Bros."),/*Luigi */
 				  (002,1,"Super Smash Bros. Melee"),/*Peach */
@@ -41,21 +40,19 @@ INSERT INTO Base_Music(Music_ID,Smash_Title_of_Origin)
                   
                   (0058,"Super Smash Bros. Brawl"),/*Final Destination - Super Smash Bros. Brawl*/
                   (0057,"Super Smash Bros. Ultimate");/*Giga Bowser*/
--- #DLC Music
+                  
 INSERT INTO DLC_Music(Music_ID,Challenger_Pack_Number,Date_Added)
-			VALUES(0001,01,01,01012018);
-=======
-	VALUES(000,1,"Super Smash Bros."),/*Mario */
-		(001,1,"Super Smash Bros."),/*Luigi */
-		(002,1,"Super Smash Bros. Melee"),/*Peach */
-		(003,1,"Super Smash Bros. Melee"),/*Bowser */
-		(004,1,"Super Smash Bros."),/*Yoshi */
-		(005,1,"Super Smash Bros."),/*Donkey Kong */
-		(006,1,"Super Smash Bros."),/*Link */
-		(007,1,"Super Smash Bros. Melee"),/*Zelda/Sheik */
-		(008,1,"Super Smash Bros."),/*Samus */
-		(009,1,"Super Smash Bros."),/*Kirby */
-		(010,1,"Super Smash Bros.");/*Fox */
+            VALUES
+                (011, 1, 1, '20190417'), /* Joker */
+                (012, 1, 2, '20190730'), /*Hero */
+                (013, 1, 3, '20190904'), /*Banjo & Kazooie */
+                (014, 1, 4, '20191106'), /*Terry Bogard */
+                (015, 1, 5, '20200128'), /*Byleth */
+                (016, 1, 6, '20200629'), /*Min Min */
+                (017, 1, 7, '20201013'), /*Steve & Alex */
+                (018, 1, 8, '20201222'), /*Sephiroth */
+                (019, 1, 9, '20210304'), /*Pyra/Mythra */
+                (020, 1, 10, '20210629'); /* Kazuya */
 		  
             
 INSERT INTO Final_Smash(Final_Smash_ID,Smash_Name,Smash_Title_of_Origin,Attack_Type,Duration,Fighter_ID,Color_Variant)
@@ -72,8 +69,6 @@ INSERT INTO Final_Smash(Final_Smash_ID,Smash_Name,Smash_Title_of_Origin,Attack_T
 		(18,"Team Star Fox","Super Smash Bros. Ultimate","Trapping/Cutscene",0.0,010,1);/*Fox */
 		
 
-
->>>>>>> 5499004be5f3bdaec888da1a640a5cc7ebd90162
 -- #Items
 INSERT INTO Item(Item_ID,Player_Selected_Status,Item_Name)
 	VALUES(0000,false,"Assist Trophy"),
@@ -142,6 +137,20 @@ INSERT INTO Base_Music(Music_ID,Smash_Title_of_Origin)
   		(0009,"Super Smash Bros. Ultimate"),/*The Light Realm: March */         
   		(0058,"Super Smash Bros. Brawl"),/*Final Destination - Super Smash Bros. Brawl*/
   		(0057,"Super Smash Bros. Ultimate");/*Giga Bowser*/
+        
+/* Code block for series of insertions into Stage. */
+INSERT INTO Stage(Stage_ID,Stage_Name,Stage_Form,Music_ID)
+    VALUES(0000,'Mementos','Default' ,0030), /*Mementos*/
+        (0001,'Yggdrasil\'s Altar','Default',0031), /*Yggdrasil's Altar*/
+        (0002,'Spiral Mountain','Default',0032), /*Spiral Mountain*/
+        (0003,'Super Smash Bros.','Default',0033), /*King of Fighters Stadium*/
+        (0004,'King of Fighters Stadium','Default',0034), /*Garreg Mach Monastery*/
+        (0005,'Spring Stadium','Default',0035), /*Spring Stadium*/
+        (0006,'Minecraft World','Default',)0036, /*Minecraft World*/
+        (0007,'Northern Cave','Default',0037), /*Northern Cave*/
+        (0009,'Cloud Sea of Alrest','Default',0038), /*Cloud Sea of Alrest*/
+        (0010,'Mishima Dojo','Default',0039); /*Mishima Dojo*/
+	
 		
 -- # Stages
 INSERT INTO Base_Stage(Stage_ID,Smash_Title_of_Origin)
@@ -156,8 +165,19 @@ INSERT INTO Base_Stage(Stage_ID,Smash_Title_of_Origin)
                 (0007,'Super Smash Bros.'), /*Saffron City*/
                 (0009,'Super Smash Bros.'), /*Mushroom Kingdom*/
                 (0010,'Super Smash Bros.'); /*Rainbow Cruise*/
-
-
+/* Code block for series of insertions into DLC_Stage. */
+INSERT INTO DLC_Stage (Stage_ID,Smash_Title_of_Origin, Date_Added)
+    VALUES(0000,'Super Smash Bros.', 04172019), /*Mementos*/
+        (0001,'Super Smash Bros.', 07302019), /*Yggdrasil's Altar*/
+        (0002,'Super Smash Bros.', 09042019), /*Spiral Mountain*/
+        (0003,'Super Smash Bros.', 11062019), /*King of Fighters Stadium*/
+        (0004,'Super Smash Bros.', 01282020), /*Garreg Mach Monastery*/
+        (0005,'Super Smash Bros.', 06292020), /*Spring Stadium*/
+        (0006,'Super Smash Bros.', 10172019), /*Minecraft World*/
+        (0007,'Super Smash Bros.', 12222020), /*Northern Cave*/
+        (0009,'Super Smash Bros.', 03042021), /*Cloud Sea of Alrest*/
+        (0010,'Super Smash Bros.', 06292021); /*Mishima Dojo*/
+	
 /* Code block for series of insertions into DLC_Fighter. */
 INSERT INTO DLC_Fighter(Fighter_ID,Color_Variant,Challenger_Pack_Number,Date_Added)
 	VALUES(011, 1, 1, 04172019), /* Joker */
@@ -185,19 +205,7 @@ INSERT INTO DLC_Music(Music_ID,Challenger_Pack_Number,Date_Added)
                 (020, 10, 06292021); /* Kazuya */
 
 
-/* Code block for series of insertions into DLC_Stage. */
-INSERT INTO DLC_Stage (Stage_ID,Smash_Title_of_Origin, Date_Added)
-    VALUES(0000,'Super Smash Bros.', 04172019), /*Mementos*/
-        (0001,'Super Smash Bros.', 07302019), /*Yggdrasil's Altar*/
-        (0002,'Super Smash Bros.', 09042019), /*Spiral Mountain*/
-        (0003,'Super Smash Bros.', 11062019), /*King of Fighters Stadium*/
-        (0004,'Super Smash Bros.', 01282020), /*Garreg Mach Monastery*/
-        (0005,'Super Smash Bros.', 06292020), /*Spring Stadium*/
-        (0006,'Super Smash Bros.', 10172019), /*Minecraft World*/
-        (0007,'Super Smash Bros.', 12222020), /*Northern Cave*/
-        (0009,'Super Smash Bros.', 03042021), /*Cloud Sea of Alrest*/
-        (0010,'Super Smash Bros.', 06292021); /*Mishima Dojo*/
-	
+
 /* Code block for series of insertions into Game_Mode. */
 INSERT INTO Game_Mode(Mode_Name, Tagline)
 	VALUES 
