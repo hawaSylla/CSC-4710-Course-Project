@@ -125,9 +125,6 @@ VALUES
   (0058,"Super Smash Bros. Brawl"),/*Final Destination - Super Smash Bros. Brawl*/
   (0057,"Super Smash Bros. Ultimate");/*Giga Bowser*/
 
-/* Code block for series of insertions into Game_Mode. */
-INSERT INTO Base_Stage(Stage_ID,Smash_Title_of_Origin)
-VALUES(0001,"Super Smash Bros.");
 
 /* Code block for series of insertions into DLC_Fighter. */
 INSERT INTO DLC_Fighter(Fighter_ID,Color_Variant,Challenger_Pack_Number,Date_Added)
