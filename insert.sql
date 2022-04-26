@@ -134,6 +134,28 @@ VALUES
         ('Female', 'Super Smash Bros.', 'Heavy', 'B'), /*Samus */
         ('Male', 'Super Smash Bros.', 'Super Light', 'D'), /*Kirby */
         ('Male', 'Super Smash Bros.', 'Super Light', 'A'); /*Fox */
+	
+INSERT INTO Music (Music_ID, Duration, Music Name)
+    VALUES(0000, '205.2', 'Lifelight (JP)'),
+        (0001, '230', 'Lifelight'),
+        (0002, '205.2', 'Unfounded Revenge'),
+        (0005, '105', 'Green Hill Zone'),
+        (0006, '157', 'Seaskape'),
+        (0007, '305', 'Original Medley'),
+        (0008, '115' 'Menu 1'),
+        (0009, '139', 'The Light Realm: March'),
+        (0058, '339', 'Final Destination - Super Smash Bros. Brawl'),
+        (0057, '180', 'Battle! (Battle Subway Trainer)*'),
+        (200, '353', 'Last Surprise'),
+        (201, '148', 'Adventure'),
+        (202, '181', 'Main Theme'),
+        (203, '192', 'Song of the Fight'),
+        (204, '189', 'Fire Emblem Theme'),
+        (205, '263', 'ARMS Grand Prix'),
+        (206, '172', 'Holland'),
+        (207, '120', 'Let the Battles Begin!'),
+        (208, '221', 'Argentum'),
+        (209, '123', 'Kazuya Mishima');
 
 /* Code block for series of insertions into Base_Music. */
 INSERT INTO Base_Music(Music_ID,Smash_Title_of_Origin)
@@ -205,16 +227,16 @@ INSERT INTO DLC_Fighter(Fighter_ID,Color_Variant,Challenger_Pack_Number,Date_Add
 /* Code block for series of insertions into DLC_Music. */
 INSERT INTO DLC_Music(Music_ID,Challenger_Pack_Number,Date_Added)
 			VALUES
-                (011, 1, 1, '2019-04-17'), /* Joker */
-                (012, 1, 2, '2019-07-30'), /* Hero */
-                (013, 1, 3, '2019-09-04'), /* Banjo & Kazooie */
-                (014, 1, 4, '2019-11-06'), /* Terry Bogard */
-                (015, 1, 5, '2020-01-28'), /* Byleth */
-                (016, 1, 6, '2020-06-29'), /* Min Min */
-                (017, 1, 7, '2020-10-13'), /* Steve & Alex */
-                (018, 1, 8, '2020-12-22'), /* Sephiroth */
-                (019, 1, 9, '2021-03-04'), /* Pyra/Mythra */
-                (020, 1, 10, '2021-06-29'); /* Kazuya */
+                (200, 1, 1, '2019-04-17'), /* Last Surprise */
+                (201, 1, 2, '2019-07-30'), /* Adventure */
+                (202, 1, 3, '2019-09-04'), /* Main Theme */
+                (203, 1, 4, '2019-11-06'), /* Song of the Fight */
+                (204, 1, 5, '2020-01-28'), /* Fire Emblem Theme */
+                (205, 1, 6, '2020-06-29'), /* ARMS Grand Prix */
+                (206, 1, 7, '2020-10-13'), /* Holland */
+                (207, 1, 8, '2020-12-22'), /* Let the Battles Begin! */
+                (208, 1, 9, '2021-03-04'), /* Argentum */
+                (209, 1, 10, '2021-06-29'); /* Kazuya Mishima */
 
 
 
