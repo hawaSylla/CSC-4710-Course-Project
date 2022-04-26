@@ -206,16 +206,16 @@ INSERT INTO Fighter_Background (Fighter_Name, Gender, Game_Series, Weight_Class,
         
 /* Code block for series of insertions into Base_Music. */
 INSERT INTO Base_Music(Music_ID,Smash_Title_of_Origin)
-	VALUES(0000,"Super Smash Bros. Ultimate"), /*Lifelight (JP) */
-	(5001,"Super Smash Bros. Ultimate"),/*Lifelight */
-	(5002,"Super Smash Bros. Ultimate"),/*Battlefield */
-	(5005,"Super Smash Bros. Ultimate"),/*Master Hand */
-	(5006,"Super Smash Bros. Ultimate"),/*Crazy Hand */
-	(5007,"Super Smash Bros. Ultimate"),/*Master Hand/Crazy Hand */
-	(5008,"Super Smash Bros. Ultimate"),/*The Light Realm: Prologue */
-	(5009,"Super Smash Bros. Ultimate"),/*The Light Realm: March */
-	(5058,"Super Smash Bros. Brawl"),/*Final Destination - Super Smash Bros. Brawl*/
-	(5057,"Super Smash Bros. Ultimate");/*Giga Bowser*/
+	VALUES(300,"Super Smash Bros. Ultimate"), /*Lifelight (JP) */
+        (301,"Super Smash Bros. Ultimate"),/*Lifelight */
+		(302,"Super Smash Bros. Brawl"),/*Unfounded Revenge*/
+		(303,"Super Smash Bros. Melee"),/*Green Hill Zone */
+        (304,"Super Smash Bros."),/*Seaskape*/
+        (305,"Super Smash Bros. Melee"),/*Original Medley*/
+		(306,"Super Smash Bros. Melee"),/*Menu 1 */
+        (307,"Super Smash Bros. Ultimate"),/*The Light Realm: March */         
+        (308,"Super Smash Bros. Brawl"),/*Final Destination - Super Smash Bros. Brawl*/
+        (309,"Super Smash Bros. Brawl");/*Battle! (Battle Subway Trainer)*/
 
 /* Code block for series of insertions into Base_Stage. */
 INSERT INTO Base_Stage(Stage_ID,Smash_Title_of_Origin)
