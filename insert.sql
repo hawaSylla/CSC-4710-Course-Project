@@ -35,53 +35,53 @@ INSERT INTO Spirit (Spirit_ID, Spirit_Name, Spirit_Type, Game_Series, Overall_Po
 	(758, 'Chaos', 'Grab', 'Sonic The Hedgehog Series', 7033),
 	(759, 'Elec Man', 'Grab', 'Mega Man Series', 7001);
 
-/* Code block for series of insertions into Final_Smash. */
-INSERT INTO Final_Smash(Final_Smash_ID,Smash_Name,Smash_Title_of_Origin,Attack_Type,Duration,Fighter_ID,Color_Variant)
-	VALUES
-    (650, "Mario Finale","Super Smash Bros.","Directional",5.0,70,1), /*Mario */
-	(651, "Poltergust G-00","Super Smash Bros. Ultimate","Trapping",4.0,71,2), /*Luigi */
-	(652, "Peach Blossom","Super Smash Bros.","Focused",3.0,72,3), /*Peach */
-	(653, "Giga Bowser Punch","Super Smash Bros. Ultimate","Stage-Wide",6.0,73,4), /* Bowser */
-	(654, "Triforce Slash","Super Smash Bros. Brawl","Trapping/Cutscene",7.0,74,5), /* Toon Link */
-	(655, "Jungle Rush","Super Smash Bros. Ultimate","Stage-Wide",0.0,75,1), /* Wolf */
-	(656, "Ancient Bow and Arrow","Super Smash Bros. Ultimate","Directional",0.0,76,2), /* Rosalina and Luma */
-	(657, "Triforce of Wisdom/Sheikah Dance","Super Smash Bros.Ultimate","Trapping",0.0,77,3), /* Pac Man */
-	(658, "Zero Laser","Super Smash Bros. Ultimate","Directional",0.0,78,4), /* King K. Rool */
-	(659, "Ultra Sword","Super Smash Bros. 4","Trapping",0.0,79,5), /* Dark Samus */
-	(660, "Mario Finale","Super Smash Bros.","Directional",0.0,80,1), /* Joker */
-	(661, "Poltergust G-00","Super Smash Bros. Ultimate","Trapping",0.0,81,2), /*Hero */
-	(662, "Peach Blossom","Super Smash Bros.","focused",0.0,82,3), /* Banjo & Kazooie */
-	(663, "Giga Bowser Punch","Super Smash Bros.Ultimate","Stage-Wide",0.0,83,4), /* Terry Bogard */
-	(664, "Stampede!","Super Smash Bros. Ultimate","Trapping/Cutscene",0.0,84,5), /* Byleth */
-	(665, "Jungle Rush","Super Smash Bros. Ultimate","Stage-Wide",0.0,85,1), /* Min Min */
-	(666, "Ancient Bow and Arrow","Super Smash Bros. Ultimate","Directional",0.0,86,2), /* Steve & Alex */
-	(667, "Triforce of Wisdom/Sheikah Dance","Super Smash Bros.Ultimate","Trapping",0.0,87,3), /* Sephiroth */
-	(668, "Zero Laser","Super Smash Bros. Ultimate","Directional",0.0,88,4), /* Pyra & Mythra */
-	(669, "Ultra Sword","Super Smash Bros. 4","Trapping",0.0,89,5); /* Kazuya */
+-- /* Code block for series of insertions into Final_Smash. */
+-- INSERT INTO Final_Smash(Final_Smash_ID,Smash_Name,Smash_Title_of_Origin,Attack_Type,Duration,Fighter_ID,Color_Variant)
+-- 	VALUES
+--     (650, "Mario Finale","Super Smash Bros.","Directional",5.0,70,1), /*Mario */
+-- 	(651, "Poltergust G-00","Super Smash Bros. Ultimate","Trapping",4.0,71,2), /*Luigi */
+-- 	(652, "Peach Blossom","Super Smash Bros.","Focused",3.0,72,3), /*Peach */
+-- 	(653, "Giga Bowser Punch","Super Smash Bros. Ultimate","Stage-Wide",6.0,73,4), /* Bowser */
+-- 	(654, "Triforce Slash","Super Smash Bros. Brawl","Trapping",7.0,74,5), /* Toon Link */
+-- 	(655, "Team Star Wolf","Super Smash Bros. Ultimate","Cutscene",5.0,75,1), /* Wolf */
+-- 	(656, "Grand Star","Super Smash Bros. Ultimate","Trapping",4.0,76,2), /* Rosalina and Luma */
+-- 	(657, "Super Pac Man","Super Smash Bros. 4","Transformation",6.0,77,3), /* Pac Man */
+-- 	(658, "Blast-O-Matic","Super Smash Bros. Ultimate","Cutscene",7.0,78,4), /* King K. Rool */
+-- 	(659, "Phazon Laser","Super Smash Bros. Ultimate","Directional",5.0,79,5), /* Dark Samus */
+-- 	(660, "All-Out Attack","Super Smash Bros. Ultimate","Directional",6,80,1), /* Joker */
+--     (661, "Gigaslash","Super Smash Bros. Ultimate","Trapping",5.2,81,2), /* Hero */
+--     (662, "The Mighty Jinjonator","Super Smash Bros. Ultimate","Trapping",5.3,82,3), /* Banjo & Kazooie */
+--     (663, "Triple Wolf","Super Smash Bros. Ultimate","Trapping",4.2,83,4), /* Terry Bogard */
+--     (664, "Progenitor God Ruptured Heaven","Super Smash Bros. Ultimate","Trapping/Cutscene",3.8,84,5), /* Byleth */
+--     (665, "ARMS Rush","Super Smash Bros. Ultimate","Directional",4.7,85,1), /* Min Min */
+--     (666, "House of Boom","Super Smash Bros. Ultimate","Directional",2.5,86,2), /* Steve & Alex */
+--     (667, "Supernova","Super Smash Bros. Ultimate","Trapping",5.5,87,3), /* Sephiroth */
+--     (668, "Burning Sword","Super Smash Bros. Ultimate","Trapping",3.6,88,4), /* Pyra & Mythra */
+--     (669, "Final Blaster","Super Smash Bros. Ultimate","Directional",4.7,89,5); /* Kazuya */
 
-/* Code block for series of insertions into Fighter_Background. */
-INSERT INTO Fighter_Background (Fighter_Name, Gender, Game_Series, Weight_Class, Tier_Rating, Final_Smash_ID)
-    VALUES
-    ('Mario', 'Male', 'Super Mario Bros.', 'Mid Weight', 'S', 650), /*Mario */
-	('Luigi', 'Male', 'Super Mario Bros.', 'Mid Weight', 'C', 651), /*Luigi */
-	('Peach', 'Female', 'Super Mario Bros.', 'Mid Weight', 'S', 652), /*Peach */
-	('Bowser', 'Male', 'Super Mario Bros.', 'Heavy', 'B', 653), /* Bowser */
-	('Toon Link', 'Male', 'Legends of Zelda', 'Heavy', 'D', 654), /* Toon Link */
-	('Wolf', 'Male', 'Star Fox', 'Heavy', 'D', 655), /* Wolf */
-	('Rosalina and Luma', 'Female', '', 'Heavy', 'B', 656), /* Rosalina and Luma */
-	('Pac Man', 'Male', 'Pac Man', 'Mid Weight', 'B', 657), /* Pac Man */
-	('King K. Rool', 'Male', 'Donkey Kong', 'Heavy', 'B', 658), /* King K. Rool */
-	('Dark Samus ', 'Female', 'Metroid', 'Super Light', 'D', 659), /* Dark Samus */
-    ('Joker', 'Male', 'Persona', 'Mid Weight', 'S', 660),
-    ('Hero', 'Male', 'Dragon Quest', 'Heavy', 'A', 661),
-    ('Banjo & Kazooie', 'Male', 'Banjo-Kazooie', 'Heavy', 'B', 662),
-    ('Terry Bogard', 'Male', 'Fatal Fury', 'Heavy', 'C', 663),
-    ('Byleth', 'Female', 'Fire Emblem', 'Mid Weight', 'D', 664),
-    ('Min Min', 'Female', 'Arms', 'Heavy', 'S', 665),
-    ('Steve & Alex', 'Male', 'Minecraft', 'Mid Weight', 'A', 666),
-    ('Sephiroth', 'Male', 'Final Fantasy', 'Super Light', 'B', 667),
-    ('Pyra & Mythra', 'Female', 'Xenoblade Chronicles', 'Mid Weight', 'C', 668),
-    ('Kazuya', 'Male', 'Tekken', 'Heavy', 'D', 669);
+-- /* Code block for series of insertions into Fighter_Background. */
+-- INSERT INTO Fighter_Background (Fighter_Name, Gender, Game_Series, Weight_Class, Tier_Rating, Final_Smash_ID) X
+--     VALUES
+--     ('Mario', 'Male', 'Super Mario Bros.', 'Mid Weight', 'S', 650), /*Mario */
+-- 	('Luigi', 'Male', 'Super Mario Bros.', 'Mid Weight', 'C', 651), /*Luigi */
+-- 	('Peach', 'Female', 'Super Mario Bros.', 'Mid Weight', 'S', 652), /*Peach */
+-- 	('Bowser', 'Male', 'Super Mario Bros.', 'Heavy', 'B', 653), /* Bowser */
+-- 	('Toon Link', 'Male', 'Legends of Zelda', 'Heavy', 'D', 654), /* Toon Link */
+-- 	('Wolf', 'Male', 'Star Fox', 'Heavy', 'D', 655), /* Wolf */
+-- 	('Rosalina and Luma', 'Female', '', 'Heavy', 'B', 656), /* Rosalina and Luma */
+-- 	('Pac Man', 'Male', 'Pac Man', 'Mid Weight', 'B', 657), /* Pac Man */
+-- 	('King K. Rool', 'Male', 'Donkey Kong', 'Heavy', 'B', 658), /* King K. Rool */
+-- 	('Dark Samus ', 'Female', 'Metroid', 'Super Light', 'D', 659), /* Dark Samus */
+--     ('Joker', 'Male', 'Persona', 'Mid Weight', 'S', 660),
+--     ('Hero', 'Male', 'Dragon Quest', 'Heavy', 'A', 661),
+--     ('Banjo & Kazooie', 'Male', 'Banjo-Kazooie', 'Heavy', 'B', 662),
+--     ('Terry Bogard', 'Male', 'Fatal Fury', 'Heavy', 'C', 663),
+--     ('Byleth', 'Female', 'Fire Emblem', 'Mid Weight', 'D', 664),
+--     ('Min Min', 'Female', 'Arms', 'Heavy', 'S', 665),
+--     ('Steve & Alex', 'Male', 'Minecraft', 'Mid Weight', 'A', 666),
+--     ('Sephiroth', 'Male', 'Final Fantasy', 'Super Light', 'B', 667),
+--     ('Pyra & Mythra', 'Female', 'Xenoblade Chronicles', 'Mid Weight', 'C', 668),
+--     ('Kazuya', 'Male', 'Tekken', 'Heavy', 'D', 669);
 
 /* Code block for series of insertions into Base_Fighter. */
 INSERT INTO Base_Fighter(Fighter_ID,Color_Variant,Smash_Title_of_Origin)
@@ -111,28 +111,28 @@ INSERT INTO DLC_Fighter(Fighter_ID,Color_Variant,Challenger_Pack_Number,Date_Add
 	(88, 4, 9, '2021-03-04'), /* Pyra & Mythra */
 	(89, 5, 10, '2021-06-29'); /* Kazuya */
 
-INSERT INTO Fighter(Fighter_ID, Color_Variant, Spirit_ID, Mode_Name, Fighter_Name)
-    VALUES
-    (70, 1, 750, 'Training', 'Mario'),
-	(71, 2, 751, 'Classic','Luigi'),
-	(72, 3, 752, 'World of Light', 'Peach'),
-	(73, 4, 753, 'Spirit Board', 'Bowser'),
-	(74, 5, 754, 'Smash', 'Toon Link'),
-	(75, 1, 755, 'Training', 'Wolf'),
-	(76, 2, 756, 'Training', 'Rosalina and Luma'),
-	(77, 3, 757, 'Smash', 'Pac Man'),
-	(78, 4, 758, 'Spirit Board', 'King K. Rool'),
-	(79, 5, 759, 'World of Light', 'Dark Samus'),
-    (80, 1, 750, 'Training','Joker'),
-	(81, 2, 751, 'Clasic', 'Hero'),
-	(82, 3, 752, 'World of Light','Banjo & Kazooie'),
-	(83, 4, 753, 'Spirit Board', 'Terry Bogard'),
-	(84, 5, 754, 'Smash', 'Byleth'),
-	(85, 1, 755, 'Training', 'Min Min'),
-	(86, 2, 756, 'Classic', 'Steve & Alex'),
-	(87, 3, 757, 'World of Light', 'Sephiroth'),
-	(88, 4, 758, 'Spirit Board', 'Pyra & Mythra'),
-	(89, 5, 759, 'Smash', 'Kazuya');
+-- INSERT INTO Fighter(Fighter_ID, Color_Variant, Spirit_ID, Mode_Name, Fighter_Name)
+--     VALUES
+--     (70, 1, 750, 'Training', 'Mario'),
+-- 	(71, 2, 751, 'Classic','Luigi'),
+-- 	(72, 3, 752, 'World of Light', 'Peach'),
+-- 	(73, 4, 753, 'Spirit Board', 'Bowser'),
+-- 	(74, 5, 754, 'Smash', 'Toon Link'),
+-- 	(75, 1, 755, 'Training', 'Wolf'),
+-- 	(76, 2, 756, 'Training', 'Rosalina and Luma'),
+-- 	(77, 3, 757, 'Smash', 'Pac Man'),
+-- 	(78, 4, 758, 'Spirit Board', 'King K. Rool'),
+-- 	(79, 5, 759, 'World of Light', 'Dark Samus'),
+--     (80, 1, 750, 'Training','Joker'),
+-- 	(81, 2, 751, 'Clasic', 'Hero'),
+-- 	(82, 3, 752, 'World of Light','Banjo & Kazooie'),
+-- 	(83, 4, 753, 'Spirit Board', 'Terry Bogard'),
+-- 	(84, 5, 754, 'Smash', 'Byleth'),
+-- 	(85, 1, 755, 'Training', 'Min Min'),
+-- 	(86, 2, 756, 'Classic', 'Steve & Alex'),
+-- 	(87, 3, 757, 'World of Light', 'Sephiroth'),
+-- 	(88, 4, 758, 'Spirit Board', 'Pyra & Mythra'),
+-- 	(89, 5, 759, 'Smash', 'Kazuya');
 
 -- #ItemBackground
 INSERT INTO Item_Background(Item_Name,Game_Series,Item_Type)
@@ -248,18 +248,18 @@ INSERT INTO Base_Stage(Stage_ID,Smash_Title_of_Origin)
 	(5110,'Super Smash Bros.'); /*Rainbow Cruise*/
     
 /* Code block for series of insertions into DLC_Stage. */
-INSERT INTO DLC_Stage (Stage_ID, Challenger_Pack_Number, Date_Added)
+INSERT INTO DLC_Stage (Stage_ID,Challenger_Pack_Number, Date_Added)
     VALUES
-    (5200,'Super Smash Bros.', '2019-04-17'), /*Mementos*/
-	(5201,'Super Smash Bros.', '2019-07-30'), /*Yggdrasil's Altar*/
-	(5202,'Super Smash Bros.', '2019-09-04'), /*Spiral Mountain*/
-	(5203,'Super Smash Bros.', '2019-11-06'), /*King of Fighters Stadium*/
-	(5204,'Super Smash Bros.', '2020-01-28'), /*Garreg Mach Monastery*/
-	(5205,'Super Smash Bros.', '2020-06-29'), /*Spring Stadium*/
-	(5206,'Super Smash Bros.', '2020-10-13'), /*Minecraft World*/
-	(5207,'Super Smash Bros.', '2020-12-22'), /*Northern Cave*/
-	(5209,'Super Smash Bros.', '2021-03-04'), /*Cloud Sea of Alrest*/
-	(5210,'Super Smash Bros.', '2021-06-29'); /*Mishima Dojo*/
+    (5200,1,'2019-04-17'), 
+    (5201,2,'2019-07-30'), 
+    (5202,3,'2019-09-04'), 
+    (5203,4,'2019-11-06'), 
+    (5204,5,'2020-01-28'), 
+    (5205,6,'2020-06-29'), 
+    (5206,7,'2020-10-13'), 
+    (5207,8,'2020-12-22'),
+    (5209,9,'2021-03-04'),
+    (5210,10,'2021-06-29');
 
 /* Code block for series of insertions into Stage. */
 INSERT INTO Stage(Stage_ID,Stage_Name,Stage_Form,Music_ID)
@@ -285,51 +285,51 @@ INSERT INTO Stage(Stage_ID,Stage_Name,Stage_Form,Music_ID)
 	(5209,'Cloud Sea of Alrest','Default',308), /*Cloud Sea of Alrest*/
 	(5210,'Mishima Dojo','Default',309); /*Mishima Dojo*/
 
-INSERT INTO Fights_On(Fighter_ID, Color_Variant, Stage_ID)
-    VALUES(82, 3, 5210), /*Banjo & Kazooie plays on Mishima Dojo*/
-        (74, 5, 5101), /*Link plays on Final Destination*/
-        (84, 5, 5109), /*Byleth plays on Mushroom Kingdom*/
-        (72, 3, 5100), /*Peach plays on Battlefield*/
-        (73, 4, 5105), /*Bowser plays on Super Happy Tree*/
-        (81, 2, 5205), /*Hero plays on Spring Stadium*/
-        (87, 3, 5206), /*Sephiroth plays on Minecraft World*/
-        (83, 4, 5107), /*Terry Bogard plays on Saffron City*/
-        (89, 5, 5209), /*Kazuya Cloud Sea of Alrest*/
-        (77, 3, 5203); /*Pac Man plays on King of Fighters Stadium*/
+-- INSERT INTO Fights_On(Fighter_ID, Color_Variant, Stage_ID)X
+--     VALUES(82, 3, 5210), /*Banjo & Kazooie plays on Mishima Dojo*/
+--         (74, 5, 5101), /*Link plays on Final Destination*/
+--         (84, 5, 5109), /*Byleth plays on Mushroom Kingdom*/
+--         (72, 3, 5100), /*Peach plays on Battlefield*/
+--         (73, 4, 5105), /*Bowser plays on Super Happy Tree*/
+--         (81, 2, 5205), /*Hero plays on Spring Stadium*/
+--         (87, 3, 5206), /*Sephiroth plays on Minecraft World*/
+--         (83, 4, 5107), /*Terry Bogard plays on Saffron City*/
+--         (89, 5, 5209), /*Kazuya Cloud Sea of Alrest*/
+--         (77, 3, 5203); /*Pac Man plays on King of Fighters Stadium*/
 
-INSERT INTO Special_Moveset(Fighter_ID,Color_Variant,Special_Move)
-    VALUES
-    (70, 1, "Fireball"), /* Mario */
-    (71, 2, "Fireball"), /* Luigi */
-    (72, 3, "Toad"), /* Peach */
-    (73, 4, "Fire Breath"), /*Bowser */
-    (74, 5, "Hero's Bow"), /*Toon Link */
-    (75, 1, "Blaster"), /*Wolf */
-    (76, 2, "Luma Shot"), /*Rosalina and Luma */
-    (77, 3, "Bonus Fruit"), /*Pac Man */
-    (78, 4, "Blunderbuss"), /*King K. Rool */
-    (79, 5, "Chargeshot"), /*Dark Samus */
-	(80, 1, "Gun/Gun Special"), /* Joker */
-    (81, 2, "Frizz"), /* Hero */
-    (82, 3, "Egg Firing / Breegull Blaster"), /* Banjo & Kazooie */
-    (83, 4, "Power Wave"), /* Terry Bogard */
-    (84, 5, "Failnaught"), /* Byleth */
-    (85, 1, "Punch"), /* Min Min */
-    (86, 2, "Mine / Craft / Create Block"), /* Steve & Alex */
-    (87, 3, "Flare / Megaflare / Gigaflare"), /* Sephiroth */
-    (88, 4, "Flame Nova"), /* Pyra & Mythra */
-    (89, 5, "Devil Blaster"); /* Kazuya */
+-- INSERT INTO Special_Moveset(Fighter_ID,Color_Variant,Special_Move) X
+--     VALUES
+--     (70, 1, "Fireball"), /* Mario */
+--     (71, 2, "Fireball"), /* Luigi */
+--     (72, 3, "Toad"), /* Peach */
+--     (73, 4, "Fire Breath"), /*Bowser */
+--     (74, 5, "Hero's Bow"), /*Toon Link */
+--     (75, 1, "Blaster"), /*Wolf */
+--     (76, 2, "Luma Shot"), /*Rosalina and Luma */
+--     (77, 3, "Bonus Fruit"), /*Pac Man */
+--     (78, 4, "Blunderbuss"), /*King K. Rool */
+--     (79, 5, "Chargeshot"), /*Dark Samus */
+-- 	(80, 1, "Gun/Gun Special"), /* Joker */
+--     (81, 2, "Frizz"), /* Hero */
+--     (82, 3, "Egg Firing / Breegull Blaster"), /* Banjo & Kazooie */
+--     (83, 4, "Power Wave"), /* Terry Bogard */
+--     (84, 5, "Failnaught"), /* Byleth */
+--     (85, 1, "Punch"), /* Min Min */
+--     (86, 2, "Mine / Craft / Create Block"), /* Steve & Alex */
+--     (87, 3, "Flare / Megaflare / Gigaflare"), /* Sephiroth */
+--     (88, 4, "Flame Nova"), /* Pyra & Mythra */
+--     (89, 5, "Devil Blaster"); /* Kazuya */
 
-INSERT INTO Utilizes(Fighter_ID, Color_Variant, Item_ID)
-    VALUES(82, 3, 68), /*Banjo & Kazooie uses Beehive*/
-        (74, 5, 61), /*Link uses Back Shield*/
-        (84, 5, 63), /*Byleth uses Banana Peel*/
-        (72, 3, 67), /*Peach uses Beastball*/
-        (73, 4, 66), /*Bowser uses Beam Sword */
-        (81, 2, 60), /*Hero uses Assist Trophy*/
-        (87, 3, 62), /*Sephiroth uses Banana Gun*/
-        (83, 4, 64), /*Terry Bogard uses Barrel*/
-        (89, 5, 65), /*Kazuya uses Barrel Cannon*/
-        (77, 3, 69); /*Pac Man uses Beetle */
+-- INSERT INTO Utilizes(Fighter_ID, Color_Variant, Item_ID) X
+--     VALUES(82, 3, 68), /*Banjo & Kazooie uses Beehive*/
+--         (74, 5, 61), /*Link uses Back Shield*/
+--         (84, 5, 63), /*Byleth uses Banana Peel*/
+--         (72, 3, 67), /*Peach uses Beastball*/
+--         (73, 4, 66), /*Bowser uses Beam Sword */
+--         (81, 2, 60), /*Hero uses Assist Trophy*/
+--         (87, 3, 62), /*Sephiroth uses Banana Gun*/
+--         (83, 4, 64), /*Terry Bogard uses Barrel*/
+--         (89, 5, 65), /*Kazuya uses Barrel Cannon*/
+--         (77, 3, 69); /*Pac Man uses Beetle */
 
 /*===============================================================================================================================*/

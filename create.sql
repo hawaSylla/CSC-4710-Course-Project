@@ -173,7 +173,7 @@ FOREIGN KEY(Item_ID) REFERENCES Item(Item_ID));
 
 /* Creates a new table called Special_Moveset, with all of its attributes. */
 CREATE TABLE Special_Moveset
-( Special_Move Integer NOT NULL,
+( Special_Move varchar(50) NOT NULL,
 Fighter_ID Integer NOT NULL,
 Color_Variant Integer NOT NULL,
 PRIMARY KEY(Fighter_ID, Color_Variant, Special_Move),
