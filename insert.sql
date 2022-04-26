@@ -258,3 +258,17 @@ INSERT INTO Stage(Stage_ID,Stage_Name,Stage_Form,Music_ID)
 	(5307,'Northern Cave','Default',0037), /*Northern Cave*/
 	(5309,'Cloud Sea of Alrest','Default',0038), /*Cloud Sea of Alrest*/
 	(5310,'Mishima Dojo','Default',0039); /*Mishima Dojo*/
+    
+/* Code block for series of insertions into utilizes. */
+INSERT INTO Utilizes(Fighter_ID,Color_Variant,Item_ID)
+    VALUES
+    (000,1,60), /*Mario, Assist Trophy*/
+	(001,1,61), /*Luigi, Back Shield*/
+	(002,1,63), /*Peach, Banana Peel*/
+	(003,1,64), /*Bowser,Barrel*/
+	(004,1,65), /*Yoshi, Barrel Cannon*/
+	(011, 1,66), /* Joker, Beam Sword*/
+	(012, 1,67), /* Hero, beastball*/
+	(013, 1,68), /* Banjo & Kazooie, beehive*/
+	(015, 1,69), /* Byleth, beetle*/
+	(018, 1,62); /* Sephiroth, banana gun */
