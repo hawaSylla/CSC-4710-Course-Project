@@ -12,9 +12,6 @@ INSERT INTO Base_Fighter(Fighter_ID,Color_Variant,Smash_Title_of_Origin)
 		(009,1,"Super Smash Bros."),/*Kirby */
 		(010,1,"Super Smash Bros.");/*Fox */
 		  
--- #DLC Fighter
-INSERT INTO DLC_Fighter(Fighter_ID,Color_Variant,Challenger_Pack_Number,Date_Added)
-	VALUES(0001,01,01,01012018);
             
 INSERT INTO Final_Smash(Final_Smash_ID,Smash_Name,Smash_Title_of_Origin,Attack_Type,Duration,Fighter_ID,Color_Variant)
 	VALUES(41,"Mario Finale","Super Smash Bros.","Directional",0.0,000,1),/*Mario */
@@ -42,9 +39,8 @@ INSERT INTO Base_Music(Music_ID,Smash_Title_of_Origin)
                   
                   (0058,"Super Smash Bros. Brawl"),/*Final Destination - Super Smash Bros. Brawl*/
                   (0057,"Super Smash Bros. Ultimate");/*Giga Bowser*/
--- #DLC Music
-INSERT INTO DLC_Music(Music_ID,Challenger_Pack_Number,Date_Added)
-			VALUES(0001,01,01,01012018);
+
+
 -- #Items
 INSERT INTO Item(Item_ID,Player_Selected_Status,Item_Name)
 	VALUES(0000,false,"Assist Trophy"),
