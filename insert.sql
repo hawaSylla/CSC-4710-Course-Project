@@ -1,4 +1,4 @@
-/* Code block for series of insertions into Game_Mode. */
+/* Code block for series of insertions into Base_Fighter. */
 INSERT INTO Base_Fighter(Fighter_ID,Color_Variant,Smash_Title_of_Origin)
 VALUES
   (000,1,"Super Smash Bros."),/*Mario */
@@ -13,6 +13,7 @@ VALUES
   (009,1,"Super Smash Bros."),/*Kirby */
   (010,1,"Super Smash Bros.");/*Fox */
   
+  /* Code block for series of insertions into Fighter_Background. */
  INSERT INTO Fighter_Background (Fighter_Gender, Fighter_Game_Series, Fighter_Weight_Class, Fighter_Tier_Rating)
     VALUES
         ('Male', 'Super Smash Bros.', 'Mid Weight', 'S'), /*Mario */
@@ -27,7 +28,7 @@ VALUES
         ('Male', 'Super Smash Bros.', 'Super Light', 'D'), /*Kirby */
         ('Male', 'Super Smash Bros.', 'Super Light', 'A'); /*Fox */
 
-/* Code block for series of insertions into Game_Mode. */
+/* Code block for series of insertions into Base_Music. */
 INSERT INTO Base_Music(Music_ID,Smash_Title_of_Origin)
 VALUES
   (0000,"Super Smash Bros. Ultimate"), /*Lifelight (JP) */
@@ -45,9 +46,19 @@ VALUES
 INSERT INTO Base_Stage(Stage_ID,Smash_Title_of_Origin)
 VALUES(0001,"Super Smash Bros.");
 
-/* Code block for series of insertions into Game_Mode. */
+/* Code block for series of insertions into DLC_Fighter. */
 INSERT INTO DLC_Fighter(Fighter_ID,Color_Variant,Challenger_Pack_Number,Date_Added)
-VALUES(0001,01,01,01012018);
+	VALUES
+	(011, 1, 1, 04172019), /* Joker */
+	(012, 1, 2, 07302019), /* Hero */
+	(013, 1, 3, 09042019), /* Banjo & Kazooie */
+	(014, 1, 4, 11062019), /* Terry Bogard */
+	(015, 1, 5, 01282020), /* Byleth */
+	(016, 1, 6, 06292020), /* Min Min */
+	(017, 1, 7, 10132020), /* Steve & Alex */
+	(018, 1, 8, 12222020), /* Sephiroth */
+	(019, 1, 9, 03042021), /* Pyra/Mythra */
+	(020, 1, 10, 06292021); /* Kazuya */
 
 /* Code block for series of insertions into Game_Mode. */
 INSERT INTO DLC_Music(Music_ID,Challenger_Pack_Number,Date_Added)
