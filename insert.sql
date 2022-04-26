@@ -1,4 +1,16 @@
 /* Code block for series of insertions into Base_Fighter. */
+INSERT INTO Fighter (Fighter_ID, Color_Variant, Spirit_ID, Mode_Name, Fighter_Name)
+    VALUES(000,1, 10148, "Super Smash Bros.", 'Mario'),
+		(001,1, 12137, "Super Smash Bros.", 'Luigi'),
+		(002,1, 10000, "Super Smash Bros. Melee", 'Peach'),
+            (003,1, 12563, "Super Smash Bros. Melee", 'Bowser'),
+            (004,1, 8798, "Super Smash Bros.", 'Yoshi'),
+            (005,1, 8533, "Super Smash Bros.", 'Donkey Kong'),
+            (006,1, 9497, "Super Smash Bros.", 'Link'),
+            (007,1, 6439, "Super Smash Bros. Melee", 'Sheik'),
+            (008,1, 7033, "Super Smash Bros.", 'Samus'),
+            (009,1, 7001, "Super Smash Bros.", 'Kirby');
+
 INSERT INTO Base_Fighter(Fighter_ID,Color_Variant,Smash_Title_of_Origin)
 			VALUES(000,1,"Super Smash Bros."),/*Mario */
 				  (001,1,"Super Smash Bros."),/*Luigi */
