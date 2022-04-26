@@ -107,12 +107,12 @@ INSERT INTO DLC_Music(Music_ID,Challenger_Pack_Number,Date_Added)
 	(201, 2, '2019-07-30'), /* Adventure */
 	(202, 3, '2019-09-04'), /* Main Theme */
 	(203, 4, '2019-11-06'), /* Song of the Fight */
-	(204, 5 '2020-01-28'), /* Fire Emblem Theme */
-	(205, 6 '2020-06-29'), /* ARMS Grand Prix */
-	(206, 7 '2020-10-13'), /* Holland */
-	(207, 8 '2020-12-22'), /* Let the Battles Begin! */
-	(208, 9 '2021-03-04'), /* Argentum */
-	(209, 10 '2021-06-29'); /* Kazuya Mishima */
+	(204, 5, '2020-01-28'), /* Fire Emblem Theme */
+	(205, 6, '2020-06-29'), /* ARMS Grand Prix */
+	(206, 7, '2020-10-13'), /* Holland */
+	(207, 8, '2020-12-22'), /* Let the Battles Begin! */
+	(208, 9, '2021-03-04'), /* Argentum */
+	(209, 10, '2021-06-29'); /* Kazuya Mishima */
 
 INSERT INTO Music_Mix (Music_Name, Remix_Status)
     VALUES
@@ -203,19 +203,7 @@ INSERT INTO Fighter_Background (Fighter_Name, Gender, Game_Series, Weight_Class,
         ('Samus', 'Female', 'Super Smash Bros.', 'Heavy', 'B'), /*Samus */
         ('Kirby', 'Male', 'Super Smash Bros.', 'Super Light', 'D'), /*Kirby */
         ('Fox', 'Male', 'Super Smash Bros.', 'Super Light', 'A'); /*Fox */
-        
-/* Code block for series of insertions into Base_Music. */
-INSERT INTO Base_Music(Music_ID,Smash_Title_of_Origin)
-	VALUES(0000,"Super Smash Bros. Ultimate"), /*Lifelight (JP) */
-	(5001,"Super Smash Bros. Ultimate"),/*Lifelight */
-	(5002,"Super Smash Bros. Ultimate"),/*Battlefield */
-	(5005,"Super Smash Bros. Ultimate"),/*Master Hand */
-	(5006,"Super Smash Bros. Ultimate"),/*Crazy Hand */
-	(5007,"Super Smash Bros. Ultimate"),/*Master Hand/Crazy Hand */
-	(5008,"Super Smash Bros. Ultimate"),/*The Light Realm: Prologue */
-	(5009,"Super Smash Bros. Ultimate"),/*The Light Realm: March */
-	(5058,"Super Smash Bros. Brawl"),/*Final Destination - Super Smash Bros. Brawl*/
-	(5057,"Super Smash Bros. Ultimate");/*Giga Bowser*/
+       
 
 /* Code block for series of insertions into Base_Stage. */
 INSERT INTO Base_Stage(Stage_ID,Smash_Title_of_Origin)
@@ -296,3 +284,15 @@ INSERT INTO Special_Moveset(Fighter_ID,Color_Variant,Special_Move)
     (87, 3, "Flare / Megaflare / Gigaflare"), /* Sephiroth */
     (88, 4, "Flame Nova"), /* Pyra & Mythra */
     (89, 5, "Devil Blaster"); /* Kazuya */
+	
+INSERT INTO Fights_On(Fighter_ID, Color_Variant, Stage_ID)
+    VALUES(013, 1, 5210), /*Banjo & Kazooie plays on Mishima Dojo*/
+        (006, 1, 5101), /*Link plays on Final Destination*/
+        (015, 1, 5109), /*Byleth plays on Mushroom Kingdom*/
+        (002, 1, 5100), /*Peach plays on Battlefield*/
+        (003, 1, 5105), /*Bowser plays on Super Happy Tree*/
+        (011, 1, 5205), /*Hero plays on Spring Stadium*/
+        (018, 1, 5206), /*Sephiroth plays on Minecraft World*/
+        (014, 1, 5107), /*Terry Bogard plays on Saffron City*/
+        (020, 1, 5209), /*Kazuya Cloud Sea of Alrest*/
+        (007, 1, 5203); /*Sheik plays on King of Fighters Stadium*/

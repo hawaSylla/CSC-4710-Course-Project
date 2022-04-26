@@ -176,5 +176,5 @@ CREATE TABLE Special_Moveset
 ( Special_Move Integer NOT NULL,
 Fighter_ID Integer NOT NULL,
 Color_Variant Integer NOT NULL,
-PRIMARY KEY(Special_Move,Fighter_ID,Color_Variant),
+PRIMARY KEY(Fighter_ID, Color_Variant, Special_Move),
 FOREIGN KEY(Fighter_ID, Color_Variant) REFERENCES Fighter(Fighter_ID, Color_Variant));
