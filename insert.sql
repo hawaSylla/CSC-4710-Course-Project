@@ -246,3 +246,27 @@ INSERT INTO Stage(Stage_ID,Stage_Name,Stage_Form,Music_ID)
 	(5307,'Northern Cave','Default',0037), /*Northern Cave*/
 	(5309,'Cloud Sea of Alrest','Default',0038), /*Cloud Sea of Alrest*/
 	(5310,'Mishima Dojo','Default',0039); /*Mishima Dojo*/
+	
+INSERT INTO Fights_On(Fighter_ID, Color_Variant, Stage_ID)
+    VALUES(013, 1, 5210),
+        (006, 1, 5301),
+        (015, 1, 5309),
+        (002, 1, 5100),
+        (003, 1, 5105),
+        (011, 1, 5305),
+        (018, 1, 5206),
+        (014, 1, 5107),
+        (020, 1, 5209),
+        (007, 1, 5310);
+
+INSERT INTO (Fighter_ID, Color_Variant, Item_ID)
+    VALUES(013, 1, 68),
+        (006, 1, 61),
+        (015, 1, 63),
+        (002, 1, 67),
+        (003, 1, 66),
+        (011, 1, 60),
+        (018, 1, 62),
+        (014, 1, 64),
+        (020, 1, 65),
+        (007, 1, 69);
