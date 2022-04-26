@@ -156,6 +156,28 @@ INSERT INTO Music (Music_ID, Duration, Music Name)
         (207, '120', 'Let the Battles Begin!'),
         (208, '221', 'Argentum'),
         (209, '123', 'Kazuya Mishima');
+	
+INSERT INTO Music_Mix (Music_Name, Mix_Status)
+    VALUES('Lifelight (JP)', 'Original'),
+        ('Lifelight', 'Original'),
+        ('Unfounded Revenge', 'Original'),
+        ('Green Hill Zone', 'Original'),
+        ('Seaskape', 'Original'),
+        ('Original Medley', 'Original'),
+        ('Menu 1', 'Original'),
+        ('The Light Realm: March', 'Original'),
+        ('Final Destination - Super Smash Bros. Brawl', 'Original'),
+        ('Battle! (Battle Subway Trainer)*', 'Original'),
+        ('Last Surprise', 'Original'),
+        ('Adventure', 'Original'),
+        ('Main Theme', 'Original'),
+        ('Song of the Fight', 'Original'),
+        ('Fire Emblem Theme', 'Original'),
+        ('ARMS Grand Prix', 'Original'),
+        ('Holland', 'Original'),
+        ('Let the Battles Begin!', 'Original'),
+        ('Argentum', 'Original'),
+        ('Kazuya Mishima', 'Original');
 
 /* Code block for series of insertions into Base_Music. */
 INSERT INTO Base_Music(Music_ID,Smash_Title_of_Origin)
