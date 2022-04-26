@@ -69,7 +69,7 @@ PRIMARY KEY(Music_ID));
 CREATE TABLE Stage
 ( Stage_ID Integer NOT NULL,
 Stage_Name varchar(250) NOT NULL,
-Stage_Form Boolean NOT NULL,
+Stage_Form varchar(50) NOT NULL,
 Music_ID Integer NOT NULL,
 PRIMARY KEY(Stage_ID),
 FOREIGN KEY(Music_ID) REFERENCES Music(Music_ID));
