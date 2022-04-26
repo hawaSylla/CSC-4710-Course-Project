@@ -127,16 +127,16 @@ INSERT INTO DLC_Fighter(Fighter_ID,Color_Variant,Challenger_Pack_Number,Date_Add
 
 /* Code block for series of insertions into DLC_Music. */
 INSERT INTO DLC_Music(Music_ID,Challenger_Pack_Number,Date_Added)
-	VALUES(011, 1, 1, 04172019), /* Joker */
-                (012, 1, 2, 07302019), /* Hero */
-                (013, 1, 3, 09042019), /* Banjo & Kazooie */
-                (014, 1, 4, 11062019), /* Terry Bogard */
-                (015, 1, 5, 01282020), /* Byleth */
-                (016, 1, 6, 06292020), /* Min Min */
-                (017, 1, 7, 10132020), /* Steve & Alex */
-                (018, 1, 8, 12222020), /* Sephiroth */
-                (019, 1, 9, 03042021), /* Pyra/Mythra */
-                (020, 1, 10, 06292021); /* Kazuya */
+	VALUES(011, 1, 04172019), /* Joker */
+                (012, 2, 07302019), /* Hero */
+                (013, 3, 09042019), /* Banjo & Kazooie */
+                (014, 4, 11062019), /* Terry Bogard */
+                (015, 5, 01282020), /* Byleth */
+                (016, 6, 06292020), /* Min Min */
+                (017, 7, 10132020), /* Steve & Alex */
+                (018, 8, 12222020), /* Sephiroth */
+                (019, 9, 03042021), /* Pyra/Mythra */
+                (020, 10, 06292021); /* Kazuya */
 
 
 /* Code block for series of insertions into DLC_Stage. */
