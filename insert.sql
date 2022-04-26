@@ -10,13 +10,13 @@ INSERT INTO Base_Fighter(Fighter_ID,Color_Variant,Smash_Title_of_Origin)
                   (007,1,"Super Smash Bros. Melee"),/*Zelda/Sheik */
                   (008,1,"Super Smash Bros."),/*Samus */
                   (009,1,"Super Smash Bros."),/*Kirby */
-                  (010,1,"Super Smash Bros.");/*Fox *//*/
+                  (010,1,"Super Smash Bros.");/*Fox */
 -- #DLC Fighter
 INSERT INTO DLC_Fighter(Fighter_ID,Color_Variant,Challenger_Pack_Number,Date_Added)
 			VALUES(0001,01,01,01012018);
             
 INSERT INTO Final_Smash(Final_Smash_ID,Smash_Name,Smash_Title_of_Origin,Attack_Type,Duration,Fighter_ID,Color_Variant)
-			VALUES(41,"Mario Finale","Super Smash Bros.","Directional",0.0,000,1),/*Mario */
+VALUES(41,"Mario Finale","Super Smash Bros.","Directional",0.0,000,1),/*Mario */
 				  (40,"Poltergust G-00","Super Smash Bros. Ultimate","Trapping",0.0,001,1),/*Luigi */
 				  (56,"Peach Blossom","Super Smash Bros.","focused",0.0,002,1),/*Peach */
                   (3,"Giga Bowser Punch","Super Smash Bros.Ultimate","Stage-Wide",0.0,003,1),/*Bowser */
