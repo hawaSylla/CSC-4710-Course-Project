@@ -220,18 +220,18 @@ INSERT INTO Base_Stage(Stage_ID,Smash_Title_of_Origin)
 	(5110,'Super Smash Bros.'); /*Rainbow Cruise*/
     
 /* Code block for series of insertions into DLC_Stage. */
-INSERT INTO DLC_Stage (Stage_ID,Smash_Title_of_Origin, Date_Added)
+INSERT INTO DLC_Stage (Stage_ID,Challenger_Pack_Number, Date_Added)
     VALUES
-    (5200,'Super Smash Bros.', '2019-04-17'), /*Mementos*/
-	(5201,'Super Smash Bros.', '2019-07-30'), /*Yggdrasil's Altar*/
-	(5202,'Super Smash Bros.', '2019-09-04'), /*Spiral Mountain*/
-	(5203,'Super Smash Bros.', '2019-11-06'), /*King of Fighters Stadium*/
-	(5204,'Super Smash Bros.', '2020-01-28'), /*Garreg Mach Monastery*/
-	(5205,'Super Smash Bros.', '2020-06-29'), /*Spring Stadium*/
-	(5206,'Super Smash Bros.', '2020-10-13'), /*Minecraft World*/
-	(5207,'Super Smash Bros.', '2020-12-22'), /*Northern Cave*/
-	(5209,'Super Smash Bros.', '2021-03-04'), /*Cloud Sea of Alrest*/
-	(5210,'Super Smash Bros.', '2021-06-29'); /*Mishima Dojo*/
+    (5200,1, '2019-04-17'), /*Mementos*/
+	(5201,2,'2019-07-30'), /*Yggdrasil's Altar*/
+	(5202,3,'2019-09-04'), /*Spiral Mountain*/
+	(5203,4,'2019-11-06'), /*King of Fighters Stadium*/
+	(5204,5,'2020-01-28'), /*Garreg Mach Monastery*/
+	(5205,6,'2020-06-29'), /*Spring Stadium*/
+	(5206,7,'2020-10-13'), /*Minecraft World*/
+	(5207,8,'2020-12-22'), /*Northern Cave*/
+	(5209,9,'2021-03-04'), /*Cloud Sea of Alrest*/
+	(5210,10,'2021-06-29'); /*Mishima Dojo*/
         
 /* Code block for series of insertions into Stage. */
 INSERT INTO Stage(Stage_ID,Stage_Name,Stage_Form,Music_ID)
@@ -246,6 +246,44 @@ INSERT INTO Stage(Stage_ID,Stage_Name,Stage_Form,Music_ID)
 	(5307,'Northern Cave','Default',0037), /*Northern Cave*/
 	(5309,'Cloud Sea of Alrest','Default',0038), /*Cloud Sea of Alrest*/
 	(5310,'Mishima Dojo','Default',0039); /*Mishima Dojo*/
+    
+/* Code block for series of insertions into utilizes. */
+INSERT INTO Utilizes(Fighter_ID,Color_Variant,Item_ID)
+    VALUES
+    (000,1,60), /*Mario, Assist Trophy*/
+	(001,1,61), /*Luigi, Back Shield*/
+	(002,1,63), /*Peach, Banana Peel*/
+	(003,1,64), /*Bowser,Barrel*/
+	(004,1,65), /*Yoshi, Barrel Cannon*/
+	(011, 1,66), /* Joker, Beam Sword*/
+	(012, 1,67), /* Hero, beastball*/
+	(013, 1,68), /* Banjo & Kazooie, beehive*/
+	(015, 1,69), /* Byleth, beetle*/
+	(018, 1,62); /* Sephiroth, banana gun */
+
+	/* Code block for series of insertions into Base_Fighter. */
+INSERT INTO Special_Moveset(Fighter_ID,Color_Variant,Special_Move)
+    VALUES
+    (70, 1, "Fireball"), /* Mario */
+    (71, 2, "Fireball"), /* Luigi */
+    (72, 3, "Toad"), /* Peach */
+    (73, 4, "Fire Breath"), /*Bowser */
+    (74, 5, "Hero's Bow"), /*Toon Link */
+    (75, 1, "Blaster"), /*Wolf */
+    (76, 2, "Luma Shot"), /*Rosalina and Luma */
+    (77, 3, "Bonus Fruit"), /*Pac Man */
+    (78, 4, "Blunderbuss"), /*King K. Rool */
+    (79, 5, "Chargeshot"), /*Dark Samus */
+	(80, 1, "Gun/Gun Special"), /* Joker */
+    (81, 2, "Frizz"), /* Hero */
+    (82, 3, "Egg Firing / Breegull Blaster"), /* Banjo & Kazooie */
+    (83, 4, "Power Wave"), /* Terry Bogard */
+    (84, 5, "Failnaught"), /* Byleth */
+    (85, 1, "Punch"), /* Min Min */
+    (86, 2, "Mine / Craft / Create Block"), /* Steve & Alex */
+    (87, 3, "Flare / Megaflare / Gigaflare"), /* Sephiroth */
+    (88, 4, "Flame Nova"), /* Pyra & Mythra */
+    (89, 5, "Devil Blaster"); /* Kazuya */
 	
 INSERT INTO Fights_On(Fighter_ID, Color_Variant, Stage_ID)
     VALUES(013, 1, 5210), /*Banjo & Kazooie plays on Mishima Dojo*/
@@ -258,15 +296,3 @@ INSERT INTO Fights_On(Fighter_ID, Color_Variant, Stage_ID)
         (014, 1, 5107), /*Terry Bogard plays on Saffron City*/
         (020, 1, 5209), /*Kazuya Cloud Sea of Alrest*/
         (007, 1, 5203); /*Sheik plays on King of Fighters Stadium*/
-
-INSERT INTO Utilizes(Fighter_ID, Color_Variant, Item_ID)
-    VALUES(013, 1, 68), /*Banjo & Kazooie uses Beehive*/
-        (006, 1, 61), /*Link uses Back Shield*/
-        (015, 1, 63), /*Byleth uses Banana Peel*/
-        (002, 1, 67), /*Peach uses Beastball*/
-        (003, 1, 66), /*Bowser uses Beam Sword */
-        (011, 1, 60), /*Hero uses Assist Trophy*/
-        (018, 1, 62), /*Sephiroth uses Banana Gun*/
-        (014, 1, 64), /*Terry Bogard uses Barrel*/
-        (020, 1, 65), /*Kazuya uses Barrel Cannon*/
-        (007, 1, 69); /*Sheik uses Beetle */
