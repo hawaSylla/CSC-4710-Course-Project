@@ -232,18 +232,18 @@ INSERT INTO Base_Stage(Stage_ID,Smash_Title_of_Origin)
 	(5110,'Super Smash Bros.'); /*Rainbow Cruise*/
     
 /* Code block for series of insertions into DLC_Stage. */
-INSERT INTO DLC_Stage (Stage_ID,Smash_Title_of_Origin, Date_Added)
+INSERT INTO DLC_Stage (Stage_ID,Challenger_Pack_Number, Date_Added)
     VALUES
-    (5200,'Super Smash Bros.', 04172019), /*Mementos*/
-	(5201,'Super Smash Bros.', 07302019), /*Yggdrasil's Altar*/
-	(5202,'Super Smash Bros.', 09042019), /*Spiral Mountain*/
-	(5203,'Super Smash Bros.', 11062019), /*King of Fighters Stadium*/
-	(5204,'Super Smash Bros.', 01282020), /*Garreg Mach Monastery*/
-	(5205,'Super Smash Bros.', 06292020), /*Spring Stadium*/
-	(5206,'Super Smash Bros.', 10172019), /*Minecraft World*/
-	(5207,'Super Smash Bros.', 12222020), /*Northern Cave*/
-	(5209,'Super Smash Bros.', 03042021), /*Cloud Sea of Alrest*/
-	(5210,'Super Smash Bros.', 06292021); /*Mishima Dojo*/
+    (5200,1, 04172019), /*Mementos*/
+	(5201,1, 07302019), /*Yggdrasil's Altar*/
+	(5202,1, 09042019), /*Spiral Mountain*/
+	(5203,1, 11062019), /*King of Fighters Stadium*/
+	(5204,1, 01282020), /*Garreg Mach Monastery*/
+	(5205,2, 06292020), /*Spring Stadium*/
+	(5206,2, 10172019), /*Minecraft World*/
+	(5207,2, 12222020), /*Northern Cave*/
+	(5209,2, 03042021), /*Cloud Sea of Alrest*/
+	(5210,2, 06292021); /*Mishima Dojo*/
         
 /* Code block for series of insertions into Stage. */
 INSERT INTO Stage(Stage_ID,Stage_Name,Stage_Form,Music_ID)
