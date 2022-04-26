@@ -23,9 +23,7 @@ INSERT INTO Base_Fighter(Fighter_ID,Color_Variant,Smash_Title_of_Origin)
                   (008,1,"Super Smash Bros."),/*Samus */
                   (009,1,"Super Smash Bros."),/*Kirby */
                   (010,1,"Super Smash Bros.");/*Fox */
--- #DLC Fighter
-INSERT INTO DLC_Fighter(Fighter_ID,Color_Variant,Challenger_Pack_Number,Date_Added)
-			VALUES(0001,01,01,01012018);
+
             
 INSERT INTO Final_Smash(Final_Smash_ID,Smash_Name,Smash_Title_of_Origin,Attack_Type,Duration,Fighter_ID,Color_Variant)
 VALUES(41,"Mario Finale","Super Smash Bros.","Directional",0.0,000,1),/*Mario */
@@ -54,17 +52,17 @@ INSERT INTO Base_Music(Music_ID,Smash_Title_of_Origin)
                   (0057,"Super Smash Bros. Ultimate");/*Giga Bowser*/
                   
 INSERT INTO DLC_Music(Music_ID,Challenger_Pack_Number,Date_Added)
-            VALUES
-                (011, 1, 1, '20190417'), /* Joker */
-                (012, 1, 2, '20190730'), /*Hero */
-                (013, 1, 3, '20190904'), /*Banjo & Kazooie */
-                (014, 1, 4, '20191106'), /*Terry Bogard */
-                (015, 1, 5, '20200128'), /*Byleth */
-                (016, 1, 6, '20200629'), /*Min Min */
-                (017, 1, 7, '20201013'), /*Steve & Alex */
-                (018, 1, 8, '20201222'), /*Sephiroth */
-                (019, 1, 9, '20210304'), /*Pyra/Mythra */
-                (020, 1, 10, '20210629'); /* Kazuya */
+			VALUES
+                (011, 1, 1, '2019-04-17'), /* Joker */
+                (012, 1, 2, '2019-07-30'), /* Hero */
+                (013, 1, 3, '2019-09-04'), /* Banjo & Kazooie */
+                (014, 1, 4, '2019-11-06'), /* Terry Bogard */
+                (015, 1, 5, '2020-01-28'), /* Byleth */
+                (016, 1, 6, '2020-06-29'), /* Min Min */
+                (017, 1, 7, '2020-10-13'), /* Steve & Alex */
+                (018, 1, 8, '2020-12-22'), /* Sephiroth */
+                (019, 1, 9, '2021-03-04'), /* Pyra/Mythra */
+                (020, 1, 10, '2021-06-29'); /* Kazuya */
 		  
             
 INSERT INTO Final_Smash(Final_Smash_ID,Smash_Name,Smash_Title_of_Origin,Attack_Type,Duration,Fighter_ID,Color_Variant)
@@ -190,31 +188,32 @@ INSERT INTO DLC_Stage (Stage_ID,Smash_Title_of_Origin, Date_Added)
         (0009,'Super Smash Bros.', 03042021), /*Cloud Sea of Alrest*/
         (0010,'Super Smash Bros.', 06292021); /*Mishima Dojo*/
 	
-/* Code block for series of insertions into DLC_Fighter. */
 INSERT INTO DLC_Fighter(Fighter_ID,Color_Variant,Challenger_Pack_Number,Date_Added)
-	VALUES(011, 1, 1, 04172019), /* Joker */
-		(012, 1, 2, 07302019), /* Hero */
-		(013, 1, 3, 09042019), /* Banjo & Kazooie */
-		(014, 1, 4, 11062019), /* Terry Bogard */
-		(015, 1, 5, 01282020), /* Byleth */
-		(016, 1, 6, 06292020), /* Min Min */
-		(017, 1, 7, 10132020), /* Steve & Alex */
-		(018, 1, 8, 12222020), /* Sephiroth */
-		(019, 1, 9, 03042021), /* Pyra/Mythra */
-		(020, 1, 10, 06292021); /* Kazuya */
+			VALUES
+                (011, 1, 1, '2019-04-17'), /* Joker */
+                (012, 1, 2, '2019-07-30'), /* Hero */
+                (013, 1, 3, '2019-09-04'), /* Banjo & Kazooie */
+                (014, 1, 4, '2019-11-06'), /* Terry Bogard */
+                (015, 1, 5, '2020-01-28'), /* Byleth */
+                (016, 1, 6, '2020-06-29'), /* Min Min */
+                (017, 1, 7, '2020-10-13'), /* Steve & Alex */
+                (018, 1, 8, '2020-12-22'), /* Sephiroth */
+                (019, 1, 9, '2021-03-04'), /* Pyra/Mythra */
+                (020, 1, 10, '2021-06-29'); /* Kazuya */
 
 /* Code block for series of insertions into DLC_Music. */
 INSERT INTO DLC_Music(Music_ID,Challenger_Pack_Number,Date_Added)
-	VALUES(011, 1, 04172019), /* Joker */
-                (012, 2, 07302019), /* Hero */
-                (013, 3, 09042019), /* Banjo & Kazooie */
-                (014, 4, 11062019), /* Terry Bogard */
-                (015, 5, 01282020), /* Byleth */
-                (016, 6, 06292020), /* Min Min */
-                (017, 7, 10132020), /* Steve & Alex */
-                (018, 8, 12222020), /* Sephiroth */
-                (019, 9, 03042021), /* Pyra/Mythra */
-                (020, 10, 06292021); /* Kazuya */
+			VALUES
+                (011, 1, 1, '2019-04-17'), /* Joker */
+                (012, 1, 2, '2019-07-30'), /* Hero */
+                (013, 1, 3, '2019-09-04'), /* Banjo & Kazooie */
+                (014, 1, 4, '2019-11-06'), /* Terry Bogard */
+                (015, 1, 5, '2020-01-28'), /* Byleth */
+                (016, 1, 6, '2020-06-29'), /* Min Min */
+                (017, 1, 7, '2020-10-13'), /* Steve & Alex */
+                (018, 1, 8, '2020-12-22'), /* Sephiroth */
+                (019, 1, 9, '2021-03-04'), /* Pyra/Mythra */
+                (020, 1, 10, '2021-06-29'); /* Kazuya */
 
 
 
