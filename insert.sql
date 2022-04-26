@@ -287,10 +287,10 @@ INSERT INTO Special_Moveset(Fighter_ID,Color_Variant,Special_Move)
 	
 INSERT INTO Fights_On(Fighter_ID, Color_Variant, Stage_ID)
     VALUES(013, 1, 5210), /*Banjo & Kazooie plays on Mishima Dojo*/
-        (006, 1, 5101), /*Link plays on Final Destination*/
+        (006, 4, 5101), /*Link plays on Final Destination*/
         (015, 1, 5109), /*Byleth plays on Mushroom Kingdom*/
         (002, 1, 5100), /*Peach plays on Battlefield*/
-        (003, 1, 5105), /*Bowser plays on Super Happy Tree*/
+        (003, 5, 5105), /*Bowser plays on Super Happy Tree*/
         (011, 1, 5205), /*Hero plays on Spring Stadium*/
         (018, 1, 5206), /*Sephiroth plays on Minecraft World*/
         (014, 1, 5107), /*Terry Bogard plays on Saffron City*/
