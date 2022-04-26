@@ -104,15 +104,15 @@ INSERT INTO Base_Music(Music_ID,Smash_Title_of_Origin)
 INSERT INTO DLC_Music(Music_ID,Challenger_Pack_Number,Date_Added)
 	VALUES
 	(200, 1, '2019-04-17'), /* Last Surprise */
-	(201, 1, '2019-07-30'), /* Adventure */
-	(202, 1, '2019-09-04'), /* Main Theme */
-	(203, 1, '2019-11-06'), /* Song of the Fight */
-	(204, 1, '2020-01-28'), /* Fire Emblem Theme */
-	(205, 1, '2020-06-29'), /* ARMS Grand Prix */
-	(206, 1, '2020-10-13'), /* Holland */
-	(207, 1, '2020-12-22'), /* Let the Battles Begin! */
-	(208, 1, '2021-03-04'), /* Argentum */
-	(209, 1, '2021-06-29'); /* Kazuya Mishima */
+	(201, 2, '2019-07-30'), /* Adventure */
+	(202, 3, '2019-09-04'), /* Main Theme */
+	(203, 4, '2019-11-06'), /* Song of the Fight */
+	(204, 5 '2020-01-28'), /* Fire Emblem Theme */
+	(205, 6 '2020-06-29'), /* ARMS Grand Prix */
+	(206, 7 '2020-10-13'), /* Holland */
+	(207, 8 '2020-12-22'), /* Let the Battles Begin! */
+	(208, 9 '2021-03-04'), /* Argentum */
+	(209, 10 '2021-06-29'); /* Kazuya Mishima */
 
 INSERT INTO Music_Mix (Music_Name, Remix_Status)
     VALUES
@@ -234,16 +234,16 @@ INSERT INTO Base_Stage(Stage_ID,Smash_Title_of_Origin)
 /* Code block for series of insertions into DLC_Stage. */
 INSERT INTO DLC_Stage (Stage_ID,Challenger_Pack_Number, Date_Added)
     VALUES
-    (5200,1, 04172019), /*Mementos*/
-	(5201,1, 07302019), /*Yggdrasil's Altar*/
-	(5202,1, 09042019), /*Spiral Mountain*/
-	(5203,1, 11062019), /*King of Fighters Stadium*/
-	(5204,1, 01282020), /*Garreg Mach Monastery*/
-	(5205,2, 06292020), /*Spring Stadium*/
-	(5206,2, 10172019), /*Minecraft World*/
-	(5207,2, 12222020), /*Northern Cave*/
-	(5209,2, 03042021), /*Cloud Sea of Alrest*/
-	(5210,2, 06292021); /*Mishima Dojo*/
+    (5200,1, '2019-04-17'), /*Mementos*/
+	(5201,2,'2019-07-30'), /*Yggdrasil's Altar*/
+	(5202,3,'2019-09-04'), /*Spiral Mountain*/
+	(5203,4,'2019-11-06'), /*King of Fighters Stadium*/
+	(5204,5,'2020-01-28'), /*Garreg Mach Monastery*/
+	(5205,6,'2020-06-29'), /*Spring Stadium*/
+	(5206,7,'2020-10-13'), /*Minecraft World*/
+	(5207,8,'2020-12-22'), /*Northern Cave*/
+	(5209,9,'2021-03-04'), /*Cloud Sea of Alrest*/
+	(5210,10,'2021-06-29'); /*Mishima Dojo*/
         
 /* Code block for series of insertions into Stage. */
 INSERT INTO Stage(Stage_ID,Stage_Name,Stage_Form,Music_ID)
