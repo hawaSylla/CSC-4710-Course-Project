@@ -11,7 +11,17 @@ INSERT INTO Base_Fighter(Fighter_ID,Color_Variant,Smash_Title_of_Origin)
                   (009,1,"Super Smash Bros."),/*Kirby */
                   (010,1,"Super Smash Bros.");/*Fox */
 INSERT INTO Base_Music(Music_ID,Smash_Title_of_Origin)
-			VALUES(0001,"Super Smash Bros.");
+			VALUES(0000,"Super Smash Bros. Ultimate"), /*Lifelight (JP) */
+                  (0001,"Super Smash Bros. Ultimate"),/*Lifelight */
+				  (0002,"Super Smash Bros. Ultimate"),/*Battlefield */
+				  (0005,"Super Smash Bros. Ultimate"),/*Master Hand */
+                  (0006,"Super Smash Bros. Ultimate"),/*Crazy Hand */
+                  (0007,"Super Smash Bros. Ultimate"),/*Master Hand/Crazy Hand */
+				  (0008,"Super Smash Bros. Ultimate"),/*The Light Realm: Prologue */
+                  (0009,"Super Smash Bros. Ultimate"),/*The Light Realm: March */
+                  
+                  (0058,"Super Smash Bros. Brawl"),/*Final Destination - Super Smash Bros. Brawl*/
+                  (0057,"Super Smash Bros. Ultimate");/*Giga Bowser*/
 INSERT INTO Base_Stage(Stage_ID,Smash_Title_of_Origin)
 			VALUES(0001,"Super Smash Bros.");
             
