@@ -10,7 +10,7 @@ INSERT INTO Base_Fighter(Fighter_ID,Color_Variant,Smash_Title_of_Origin)
                   (007,1,"Super Smash Bros. Melee"),/*Zelda/Sheik */
                   (008,1,"Super Smash Bros."),/*Samus */
                   (009,1,"Super Smash Bros."),/*Kirby */
-                  (010,1,"Super Smash Bros.");/*Fox */
+                  (010,1,"Super Smash Bros.");/*Fox *//*/
 -- #DLC Fighter
 INSERT INTO DLC_Fighter(Fighter_ID,Color_Variant,Challenger_Pack_Number,Date_Added)
 			VALUES(0001,01,01,01012018);
