@@ -12,6 +12,20 @@ VALUES
   (008,1,"Super Smash Bros."),/*Samus */
   (009,1,"Super Smash Bros."),/*Kirby */
   (010,1,"Super Smash Bros.");/*Fox */
+  
+ INSERT INTO Fighter_Background (Fighter_Gender, Fighter_Game_Series, Fighter_Weight_Class, Fighter_Tier_Rating)
+    VALUES
+        ('Male', 'Super Smash Bros.', 'Mid Weight', 'S'), /*Mario */
+        ('Male', 'Super Smash Bros.', 'Mid Weight', 'C'), /*Luigi */
+        ('Female', 'Super Smash Bros. Melee', 'Mid Weight', 'S'), /*Peach */
+        ('Male', 'Super Smash Bros. Melee', 'Heavy', 'B'), /*Bowser */
+        ('Male', 'Super Smash Bros.', 'Heavy', 'D'), /*Yoshi */
+        ('Male', 'Super Smash Bros.', 'Heavy', 'D'), /*Donkey Kong */
+        ('Male', 'Super Smash Bros.', 'Heavy', 'B'), /*Link */
+        ('Female', 'Super Smash Bros. Melee', 'Mid Weight', 'B'), /*Zelda/Sheik */
+        ('Female', 'Super Smash Bros.', 'Heavy', 'B'), /*Samus */
+        ('Male', 'Super Smash Bros.', 'Super Light', 'D'), /*Kirby */
+        ('Male', 'Super Smash Bros.', 'Super Light', 'A'); /*Fox */
 
 /* Code block for series of insertions into Game_Mode. */
 INSERT INTO Base_Music(Music_ID,Smash_Title_of_Origin)
