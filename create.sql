@@ -9,7 +9,7 @@ PRIMARY KEY(Overall_Power));
 
 /* Creates a new table called Spirit, with all of its attributes. */
 CREATE TABLE Spirit
-( Spirit_ID Integer NOT NULL,
+( Spirit_ID Integer NOT NULL AUTO_INCREMENT,
 Spirit_Name varchar(100) NOT NULL,
 Spirit_Type varchar(25) NOT NULL,
 Game_Series varchar(100) NOT NULL,
@@ -17,7 +17,7 @@ Overall_Power Integer NOT NULL,
 PRIMARY KEY(Spirit_ID),
 FOREIGN KEY(Overall_Power) REFERENCES Spirit_Power(Overall_Power)); 
 
-/*====================================================================================*/
+/*===============================================================================================================================*/
 
 /* Creates a new table called Item_Background, with all of its attributes. */
 CREATE TABLE Item_Background
@@ -28,13 +28,13 @@ PRIMARY KEY(Item_Name));
 
 /* Creates a new table called Item, with all of its attributes. */
 CREATE TABLE Item
-( Item_ID Integer NOT NULL,
+( Item_ID Integer NOT NULL AUTO_INCREMENT,
 Player_Selected_Status Boolean NOT NULL,
 Item_Name varchar(100) NOT NULL,
 PRIMARY KEY(ITEM_ID),
 FOREIGN KEY(Item_Name) REFERENCES Item_Background(Item_Name));
 
-/*====================================================================================*/
+/*===============================================================================================================================*/
 
 /* Creates a new table called Music_Mix, with all of its attributes. */
 CREATE TABLE Music_Mix
@@ -44,7 +44,7 @@ PRIMARY KEY(Music_Name));
 
 /* Creates a new table called Music, with all of its attributes. */
 CREATE TABLE Music
-( Music_ID Integer NOT NULL,
+( Music_ID Integer NOT NULL AUTO_INCREMENT,
 Duration Float NOT NULL,
 Music_Name varchar(250) NOT NULL,
 PRIMARY KEY(Music_ID),
@@ -63,11 +63,11 @@ Challenger_Pack_Number Integer NOT NULL,
 Date_Added date NOT NULL,
 PRIMARY KEY(Music_ID));
 
-/*====================================================================================*/
+/*===============================================================================================================================*/
 
 /* Creates a new table called Stage, with all of its attributes. */
 CREATE TABLE Stage
-( Stage_ID Integer NOT NULL,
+( Stage_ID Integer NOT NULL AUTO_INCREMENT,
 Stage_Name varchar(250) NOT NULL,
 Stage_Form Boolean NOT NULL,
 Music_ID Integer NOT NULL,
@@ -87,11 +87,11 @@ Challenger_Pack_Number Integer NOT NULL,
 Date_Added date NOT NULL,
 PRIMARY KEY(Stage_ID));
 
-/*====================================================================================*/
+/*===============================================================================================================================*/
 
 /* Creates a new table called Final_Smash, with all of its attributes. */
 CREATE TABLE Final_Smash
-( Final_Smash_ID Integer NOT NULL,
+( Final_Smash_ID Integer NOT NULL AUTO_INCREMENT,
 Smash_Name varchar(10) NOT NULL,
 Smash_Title_of_Origin varchar(100) NOT NULL,
 Attack_Type varchar(20) NOT NULL,
@@ -106,7 +106,7 @@ CREATE TABLE Game_Mode
 Tagline varchar(100) NOT NULL,
 PRIMARY KEY(Mode_Name));
 
-/*====================================================================================*/
+/*===============================================================================================================================*/
 
 /* Creates a new table called Fighter_Background, with all of its attributes. */
 CREATE TABLE Fighter_Background
@@ -121,7 +121,7 @@ FOREIGN KEY(Final_Smash_ID) REFERENCES Final_Smash(Final_Smash_ID));
 
 /* Creates a new table called Fighter, with all of its attributes. */
 CREATE TABLE Fighter
-( Fighter_ID Integer NOT NULL,
+( Fighter_ID Integer NOT NULL AUTO_INCREMENT,
 Color_Variant Integer NOT NULL,
 Spirit_ID Integer NOT NULL,
 Mode_Name varchar(100) NOT NULL,
@@ -151,7 +151,7 @@ Challenger_Pack_Number Integer NOT NULL,
 Date_Added date NOT NULL,
 PRIMARY KEY(Fighter_ID));
 
-/*====================================================================================*/
+/*===============================================================================================================================*/
 
 /* Creates a new table called Fights_On, with all of its attributes. */
 CREATE TABLE Fights_On
