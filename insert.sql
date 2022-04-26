@@ -286,13 +286,13 @@ INSERT INTO Special_Moveset(Fighter_ID,Color_Variant,Special_Move)
     (89, 5, "Devil Blaster"); /* Kazuya */
 	
 INSERT INTO Fights_On(Fighter_ID, Color_Variant, Stage_ID)
-    VALUES(013, 1, 5210), /*Banjo & Kazooie plays on Mishima Dojo*/
-        (006, 4, 5101), /*Link plays on Final Destination*/
-        (015, 1, 5109), /*Byleth plays on Mushroom Kingdom*/
-        (002, 1, 5100), /*Peach plays on Battlefield*/
-        (003, 5, 5105), /*Bowser plays on Super Happy Tree*/
-        (011, 1, 5205), /*Hero plays on Spring Stadium*/
-        (018, 1, 5206), /*Sephiroth plays on Minecraft World*/
-        (014, 1, 5107), /*Terry Bogard plays on Saffron City*/
-        (020, 1, 5209), /*Kazuya Cloud Sea of Alrest*/
-        (007, 1, 5203); /*Sheik plays on King of Fighters Stadium*/
+    VALUES(82, 3, 5210), /*Banjo & Kazooie plays on Mishima Dojo*/
+        (74, 5, 5101), /*Link plays on Final Destination*/
+        (84, 5, 5109), /*Byleth plays on Mushroom Kingdom*/
+        (72, 3, 5100), /*Peach plays on Battlefield*/
+        (73, 4, 5105), /*Bowser plays on Super Happy Tree*/
+        (81, 2, 5205), /*Hero plays on Spring Stadium*/
+        (87, 3, 5206), /*Sephiroth plays on Minecraft World*/
+        (83, 4, 5107), /*Terry Bogard plays on Saffron City*/
+        (89, 5, 5209), /*Kazuya Cloud Sea of Alrest*/
+        (77, 3, 5203); /*Pac Man plays on King of Fighters Stadium*/
