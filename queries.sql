@@ -40,3 +40,7 @@ WHERE (S.music_id = M.music_id AND S.stage_name = 'Saffron City' AND M.music_nam
 SELECT *
 FROM Base_Music as M
 WHERE M.music_id = '308' AND S.smash_title_of_origin = 'Super Smash Bros. Brawl';
+
+SELECT *
+FROM Base_Fighter as B
+WHERE B.color_variant = '5' AND B.smash_title_of_origin = 'Super Smash Bros. Ultimate';
