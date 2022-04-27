@@ -24,3 +24,7 @@ SELECT *
 FROM Spirits as S
 WHERE S.attack_Type ='Attack'
 OR S.attack_Type = 'Grab';
+
+SELECT *
+FROM DLC_Fighter
+WHERE Challenger_Pack_Number = 5 AND Date_Added = '2020-01-28';
