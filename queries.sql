@@ -32,3 +32,7 @@ WHERE I.item_name = IB.item_name
 SELECT *
 FROM Spirits as S
 WHERE S.attack_power < defense_power;
+
+SELECT *
+FROM Stages as S
+WHERE S.stage_name = 'Saffron City';
