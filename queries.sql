@@ -1,3 +1,8 @@
+SELECT *
+FROM Spirits as S
+WHERE S.attack_Type ='Attack'
+OR S.attack_Type = 'Grab';
+
 SELECT * 
 FROM Spirit as S, Spirit_Power as Sp
 WHERE S.overall_power = SP.overall_power
@@ -7,24 +12,19 @@ WHERE S.overall_power = SP.overall_power
 SELECT *
 FROM Item as I, Item_Background as IB
 WHERE I.item_name = IB.item_name
-	AND I.player_selected_status = True
-	AND IB.game_series = 'Kid Icarus';
-    
-SELECT *
-FROM Item as I, Item_Background as IB
-WHERE I.item_name = IB.item_name
 	AND I.player_selected_status = False
 	AND IB.item_type = 'Throwing';
-	
+    
 SELECT *
 FROM Music as M
 WHERE m.duration < 200;
 
 SELECT *
-FROM Spirits as S
-WHERE S.attack_Type ='Attack'
-OR S.attack_Type = 'Grab';
-
-SELECT *
 FROM DLC_Fighter
 WHERE Challenger_Pack_Number = 5 AND Date_Added = '2020-01-28';
+	
+SELECT *
+FROM Item as I, Item_Background as IB
+WHERE I.item_name = IB.item_name
+	AND I.player_selected_status = True
+	AND IB.game_series = 'Kid Icarus';
