@@ -34,5 +34,9 @@ FROM Spirits as S
 WHERE S.attack_power < defense_power;
 
 SELECT *
-FROM Stages as S
-WHERE S.stage_name = 'Saffron City';
+FROM Stages as S, Music as M
+WHERE (S.music_id = M.music_id AND S.stage_name = 'Saffron City' AND M.music_name = 'Argentum');
+
+SELECT *
+FROM Base_Music as M
+WHERE M.music_id = '308' AND S.smash_title_of_origin = 'Super Smash Bros. Brawl';
