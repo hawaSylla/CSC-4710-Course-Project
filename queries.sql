@@ -31,7 +31,7 @@ WHERE I.item_name = IB.item_name
 	
 SELECT *
 FROM Spirits as S
-WHERE S.attack_power < defense_power;
+WHERE S.attack_power < S.defense_power;
 
 SELECT *
 FROM Stages as S, Music as M
